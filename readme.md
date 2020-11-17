@@ -11,6 +11,6 @@
 #### Los integrantes del grupo somos: Francisco Guido, Daniel Matsusaka, Fabrizio /*pushea apellido*/.
 ##### Les pasamos una breve descripcion de cada uno!
 *💻 Francisco Guido: Tengo 21 años, actualmente me encuentro trabajando en ICBC y aprendiendo a programar en DH.*
-*💻Daniel Matsusaka: Tengo 30 años, actualmente trabajo en agronomia como estudiante de doctorado en bioiformática y biología molecular, ademas soy ayudante de catedra de fisiología vegetal. ecofisiología 🌳*
+*💻Daniel Matsusaka: Tengo 30 años, actualmente trabajo en agronomia como estudiante de doctorado en bioinformática y biología molecular, además soy ayudante de catedra de fisiología vegetal. ecofisiología 🌳*
 *💻*
 
