@@ -6,7 +6,6 @@
 
 Haciendo cambios 
 
-Haciendo cambios x2
 =======
 <<<<<<< HEAD
 #### A continuacion les dejame los links de las páginas que hemos usado como referencia: 
