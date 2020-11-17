@@ -1,3 +1,3 @@
 # ¡Bienvenidos a nuestro ecommerce de venta de ropa!
-### AY NOT DEAD se presenta entre los consumidores como una marca de vanguardia, con espíritú joven e informal.
-*El target de la marca se enfoca en un público joven, hombres y mujeres entre los 20 y 35 años de edad y que se identifiquen con la marca. Los consumidores de la marca, son personas con un poder adquisitivo medio- alto, en su mayoría, interesados por la moda y en una estética más vanguardista y diferente.*
+### Dead Fellas se presenta entre los consumidores como una marca de vanguardia, con espíritu joven e informal.
+*El target de la marca se enfoca en un público joven, entre los 18 y 35 años de edad y que se identifiquen con la marca.*
