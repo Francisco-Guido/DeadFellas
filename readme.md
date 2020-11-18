@@ -8,9 +8,9 @@
 * [APPLE](https://www.apple.com/la/)
 * [The Soap Co](https://thesoapco.org/)
 
-#### Los integrantes del grupo somos: Francisco Guido, Daniel Matsusaka, Fabrizio /*pushea apellido*/.
+#### Los integrantes del grupo somos: Francisco Guido, Daniel Matsusaka, Fabrizio Franceschetti.
 ##### Les pasamos una breve descripcion de cada uno!
 *💻 Francisco Guido: Tengo 21 años, actualmente me encuentro trabajando en ICBC y aprendiendo a programar en DH.*
 *💻Daniel Matsusaka: Tengo 30 años, actualmente trabajo en agronomia como estudiante de doctorado en bioinformática y biología molecular, además soy ayudante de catedra de fisiología vegetal. ecofisiología 🌳*
-*💻*
+*💻 Fabrizio Franceschetti: Tengo 20 años, actualmente estudio la carrera de aviacion comercial y a la vez realizo el curso de Programación Web Full Stack*
 ![alt text](https://www.digitalhouse.com/ar/logo-DH.png)
