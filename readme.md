@@ -1,4 +1,3 @@
-![alt text](https://www.digitalhouse.com/ar/logo-DH.png)
 # ¡Bienvenidos a nuestro ecommerce de venta de ropa!
 ## Dead Fellas se presenta entre los consumidores como una marca de vanguardia, con espíritu joven e informal. 
 *El target de la marca se enfoca en un público joven, entre los 18 y 35 años de edad y que se identifiquen con la marca.🤘*
@@ -14,4 +13,4 @@
 *💻 Francisco Guido: Tengo 21 años, actualmente me encuentro trabajando en ICBC y aprendiendo a programar en DH.*
 *💻Daniel Matsusaka: Tengo 30 años, actualmente trabajo en agronomia como estudiante de doctorado en bioinformática y biología molecular, además soy ayudante de catedra de fisiología vegetal. ecofisiología 🌳*
 *💻*
-
+![alt text](https://www.digitalhouse.com/ar/logo-DH.png)
