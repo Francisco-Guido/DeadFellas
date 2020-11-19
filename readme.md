@@ -8,7 +8,7 @@
 * [APPLE](https://www.apple.com/la/)
 * [The Soap Co](https://thesoapco.org/)
 
-#### Los integrantes del grupo somos: Francisco Guido, Daniel Matsusaka, Fabrizio Franceschetti.
+#### Los integrantes del grupo somos: Francisco Guido, Daniel Matsusaka y Fabrizio Franceschetti.
 ##### Les pasamos una breve descripcion de cada uno!
 * 💻 Francisco Guido: Tengo 21 años, actualmente me encuentro trabajando en ICBC y realizando en curso de Programacion Web Full Stack en Digital House.
 * 💻Daniel Matsusaka: Tengo 30 años, actualmente trabajo en agronomia como estudiante de doctorado en bioinformática y biología molecular, además soy ayudante de catedra de fisiología vegetal. ecofisiología 🌳
