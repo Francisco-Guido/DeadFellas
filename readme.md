@@ -14,3 +14,7 @@
 * 💻Daniel Matsusaka: Tengo 30 años, actualmente trabajo en agronomia como estudiante de doctorado en bioinformática y biología molecular, además soy ayudante de catedra de fisiología vegetal. ecofisiología 🌳
 * 💻 Fabrizio Franceschetti: Tengo 20 años, actualmente estudio la carrera de aviacion comercial y a la vez realizo el curso de Programación Web Full Stack
 ![alt text](https://www.digitalhouse.com/ar/logo-DH.png)
+
+
+
+Adjuntamos link de Figma con el workframe: https://www.figma.com/file/19Ed97sG29T8YXhfqthPAz/Untitled
