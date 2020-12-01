@@ -1,0 +1,26 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+header{
+    background: #adb5bd;
+    font-family: Asap;
+    padding:40px 20px 40px 20px;
+}
+a{
+    text-decoration: none;
+    color:rgb(126, 122, 122);
+}
+.logo{
+    float: left;
+
+}
+.menu-items{
+    float: left;
+}
+.fields{
+    float: left;
+    
+}
