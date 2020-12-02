@@ -4,23 +4,142 @@
     box-sizing: border-box;
 }
 
-header{
-    background: #adb5bd;
-    font-family: Asap;
-    padding:40px 20px 40px 20px;
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
 }
-a{
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
     text-decoration: none;
-    color:rgb(126, 122, 122);
+    color: #555;
 }
-.logo{
-    float: left;
+
+p {
+    color: #555;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff523b;
+    color: white;
+}
+
+.header {
+    background: radial-gradient(#fff,);
+}
+
+.header row {
+    margin-top: 70px;
+}
+
+.categorias {
+    margin: 70px 0;
+}
+
+.col-1 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-1 img {
+    width: 100%;
+}
+
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.col-2 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.col-2 img {
+    width: 100%;
+}
+
+.tittle {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+.tittle::after {
+    content: '';
+    background: black;
+    width: 500px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-80%);
+}
+
+h4 {
+    color: black;
+    font-weight: normal;
+}
+
+.col-2 p {
+    font-size: 14px;
 
 }
-.menu-items{
-    float: left;
-}
-.fields{
-    float: left;
-    
+
+.col-2:hover {
+    transform: translateY(-5px);
 }
