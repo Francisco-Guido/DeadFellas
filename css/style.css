@@ -67,12 +67,11 @@ p {
 
 .btn {
     display: inline-block;
-    background: #ff523b;
     color: white;
 }
 
 .header {
-    background: white;
+    background: transparent;
 }
 
 .header row {
@@ -134,10 +133,12 @@ p {
 h4 {
     color: black;
     font-weight: normal;
+    text-align: center;
 }
 
 .col-2 p {
     font-size: 14px;
+    text-align: center;
 
 }
 
@@ -195,15 +196,22 @@ a {
       font-size: 10px;
       padding: 60px 0 20px;
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-around;
+      align-items: flex-end;
   }
 
   .footer p {
       color: white;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
   }
 
   .footer h2 {
       color: white;
       margin-bottom: 20px;
+            display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
   }
  
