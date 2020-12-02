@@ -239,7 +239,7 @@ th {
 }
 
 td {
-    padding: 10px 5px;
+    padding: 10px 30px;
 }
 
 td input {
@@ -253,7 +253,6 @@ td a {
 }
 
 td img {
-    width: 80px;
     height: 80px;
     margin-right: 10px;
 }
