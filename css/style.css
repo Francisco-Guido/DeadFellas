@@ -190,24 +190,17 @@ a {
   }
 
 /*-------- Footer --------*/
-  .footer {
+  .pie {
       background: black;
       color: white;
       font-size: 10px;
-      padding: 60px 0 20px;
       display: flex;
       justify-content: space-around;
-      align-items: flex-end;
+      height: 60px;
+      
   }
 
-  .footer p {
-      color: white;
-      display: flex;
-      justify-content: space-around;
-      align-items: flex-end;
-  }
-
-  .footer h2 {
+  .pie h2 {
       color: white;
       margin-bottom: 20px;
             display: flex;
@@ -275,4 +268,11 @@ td:last-child {
 
 th:last-child {
     text-align: right;
+}
+
+.main{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
 }
