@@ -25,7 +25,8 @@ section{
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    margin: 150px
+    margin: 150px;
+    position:relative;
 }
 
 .principal{
@@ -47,8 +48,20 @@ form{
     border:1px solid rgb(202, 202, 202);
     color: #000;
     border-radius: 20px;
-    margin: 0px 0px 0px 0px;
 }
+
+.button2{
+    padding: 10px 60px 10px 60px;
+    background-color: rgb(202, 202, 202);
+    color: #fff;
+    border:1px solid rgb(202, 202, 202);
+    color: #000;
+    border-radius: 20px;
+    position:relative;
+    bottom:50px;
+}
+
+
 .button:hover{
     background-color: rgb(155, 153, 153);
     color: #fff;
@@ -57,6 +70,16 @@ form{
     font-weight: 700;
     border-radius: 20px;
 }
+
+.button2:hover{
+    background-color: rgb(155, 153, 153);
+    color: #fff;
+    border:2px solid rgb(29, 29, 29);
+    color: #000;
+    font-weight: 700;
+    border-radius: 20px;
+}
+
 .form-input{
     padding:7px;
     border-radius: 25px;
@@ -70,7 +93,6 @@ form{
 
 .mediante{
     font-weight: 700;
-    padding: 0px 0px 40px 0px;
 }
 .contra:hover{
     border-bottom: 1px solid #0000ff;
@@ -88,6 +110,25 @@ input:focus{
     outline: none;
 }
 
+.container2{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 220px;
+    position: relative;
+}
+
+.container3{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 120px;
+    position:relative;
+    bottom:20px;
+}
+
 .olv{
     display:flex;
     justify-content: space-around;
@@ -95,12 +136,23 @@ input:focus{
     flex-direction: column;
 }
 
-.ingresar img{
+hr{
+    color:black;
     width: 200px;
 }
 
+.ingresar{
+    height:10px;
+}
+
+.ingresar img{
+    width: 230px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius:20px;
+}
+
 .ingresar img:hover{
-    border: 1px solid rgb(124, 121, 121);
+    border: 3px solid rgb(7, 7, 7);
 }
 
 .pie {
@@ -112,13 +164,38 @@ input:focus{
     height: 60px;
     width: 850px;        
 }
-
-.pie h2 {
-    color: rgb(255, 255, 255);
-    margin-bottom: 20px;
-          display: flex;
+.pie{
+    display: flex;
     justify-content: space-around;
     align-items: flex-end;
+}
+.pie .pie2 {
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 600px;
+}
+
+.redes{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width:70px
+}
+
+.fb,
+.ig{
+    width:20px;
+}
+
+.ejey {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height:40px;
 }
 
 /*
