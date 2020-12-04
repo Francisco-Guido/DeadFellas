@@ -240,7 +240,7 @@ h2:hover{
     font-weight: 700;
     border-radius: 20px;
     padding: 5px 5px 5px 5px;
-    transition: background-color 1.5s;
+    transition: background-color 0.7s;
     margin: 0px 0px -5px 0px;
 }
 
