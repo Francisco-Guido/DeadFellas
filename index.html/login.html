@@ -6,29 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/login.css">
     <title>Log in</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
      
 </head>
 
 <body>
     <main>
     <section>
-        <article>
+        <article class="principal">
             <img src="../logo/lodoDef.jpg" alt="Logo" class="logo">
         </article>
         <article>
             <form>
-            <input type="email" id="txtEmail" placeholder="Ingresá tu Email"/>
-            <input type="password" id="txtPassword" placeholder="Password"/>
-            <a href="#">¿Olvidaste tu contraseña?</a>
-            <input type="button" value="Ingresar"/>
+                <input type="email" class="form-input" id="txtEmail" placeholder="Ingresá tu Email" required/>
+                <div class="passw">
+                    <div class="olv">
+                    </div><input type="password" class="form-input" id="txtPassword" placeholder="Password"/>
+                    <a href="#" class ="contra">¿Olvidaste tu contraseña?</a>
+                    </div>
+                    <input type="submit" class="button" value="Ingresar"/>
+                    
+                </div>
+                
             </form>
         </article>
-            <p>Ingresar mediante</p>            
-            <article class="ingresar"><img src="../logo/google_logo.png" alt="Google" >     
-                <p>Ingresar mediante</p>        
+            <p class="mediante">Ingresar mediante:</p>            
+            <article class="ingresar"><a href="#"><img src="../logo/google_logo.png" alt="Google"> </a>    
         </article>
-            <hr>
-            <input type="button" value="Registrate Aqui"/>
+    
+            <input type="button" class="button" value="Registrate Aqui"/>
         <footer class="pie">
     
         <h2>AYUDA</h2>
