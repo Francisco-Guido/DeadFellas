@@ -190,24 +190,47 @@ a {
   }
 
 /*-------- Footer --------*/
-  .pie {
-      background: black;
-      color: white;
-      font-size: 10px;
-      display: flex;
-      justify-content: space-around;
-      height: 60px;
-      
-  }
+.pie {
+    background: #000;
+    color: #fff;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    width: 100%;
+    align-items: flex-end;
+    
+}
 
-  .pie h2 {
-      color: white;
-      margin-bottom: 20px;
-            display: flex;
-      justify-content: space-around;
-      align-items: flex-end;
-  }
+.pie .pie2 {
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 600px;
+    flex-grow: 0.4;
+}
  
+.redes{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width:70px
+}
+
+.fb,
+.ig{
+    width:20px;
+}
+
+.ejey {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height:45px;
+}
 
 /*-------- CARRITO --------*/
 .cart-page {

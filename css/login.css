@@ -58,7 +58,8 @@ form{
     color: #000;
     border-radius: 20px;
     position:relative;
-    bottom:50px;
+    bottom:55px;
+    font-weight: 400;
 }
 
 
@@ -162,13 +163,12 @@ hr{
     display: flex;
     justify-content: space-around;
     height: 60px;
-    width: 850px;        
-}
-.pie{
+    width: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: flex-end;  
 }
+
 .pie .pie2 {
     color: rgb(255, 255, 255);
     margin-bottom: 20px;
