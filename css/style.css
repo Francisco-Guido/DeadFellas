@@ -532,3 +532,67 @@ hr{
     margin: 0px 0px -5px 0px;
 }
 
+/*-------- REGISTTER --------*/
+.imagen_register{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.register_1{
+    position:relative;
+    background-color: #555;
+}
+
+.register_2{
+    position:relative;
+    background-color: #555;
+}
+
+
+
+
+
+.register_section{
+    background:  rgb(250, 250, 250);
+    height:650px;
+    width:850px;
+    text-align: center;
+    margin: auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 150px;
+    position:relative;
+}
+.pie-register {
+    background: #000;
+    color: #fff;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;  
+}
+
+.pie-register .pie2-register {
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 600px;
+}
+
+.redes-register{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width:70px
+}
