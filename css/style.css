@@ -494,7 +494,7 @@ hr{
 
 .pie-login .pie2-login {
     color: rgb(255, 255, 255);
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -521,6 +521,13 @@ hr{
     height:48px;
 }
 
+.h2-login{
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    padding:5px 5px 5px 5px;
+}
+
 .h2-login:hover{
     background-color: #fff;
     border:2px solid rgb(29, 29, 29);
@@ -529,7 +536,6 @@ hr{
     border-radius: 20px;
     padding: 5px 5px 5px 5px;
     transition: background-color 1.5s;
-    margin: 0px 0px -5px 0px;
 }
 
 /*-------- REGISTTER --------*/
