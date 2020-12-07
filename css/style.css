@@ -346,7 +346,7 @@ th:last-child {
     padding: 5px 30px 5px 30px;
     background-color: rgb(202, 202, 202);
     color: #fff;
-    border:1px solid rgb(202, 202, 202);
+    border:2px solid rgb(202, 202, 202);
     color: #000;
     border-radius: 20px;
     position: relative;
@@ -357,7 +357,7 @@ th:last-child {
     padding: 10px 60px 10px 60px;
     background-color: rgb(202, 202, 202);
     color: #fff;
-    border:1px solid rgb(202, 202, 202);
+    border:2px solid rgb(202, 202, 202);
     color: #000;
     border-radius: 20px;
     position:relative;
@@ -523,6 +523,7 @@ hr{
 
 .h2-login{
     color: #fff;
+    border: 2px solid transparent;
     font-weight: 700;
     font-size: 12px;
     padding:5px 5px 5px 5px;
