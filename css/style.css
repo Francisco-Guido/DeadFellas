@@ -352,7 +352,7 @@ th:last-child {
 }
 
 .button1-login{
-    padding:7px;
+    padding:1%;
     width: 50%;
     border-radius: 25px;
     background-color: rgb(202, 202, 202);
@@ -413,9 +413,7 @@ th:last-child {
     font-size: 12px;
 }
 
-.mediante-login{
-    font-weight: 50%;
-}
+
 .contra-login:hover{
     text-decoration: none;
     color: #0000ff;
@@ -423,7 +421,24 @@ th:last-child {
     background-color: #fff;
 }
 
+.regist-login{
+    text-decoration: none;
+    color:#000;
+    font-size: 13px;
+}
 
+.regist-login:hover{
+    text-decoration: none;
+    color: #0000ff;
+    font-weight: 700;
+    background-color: #fff;
+}
+
+
+
+.mediante-login{
+    font-weight: 50%;
+}
 
 .passw-container-login{
     display:flex;
@@ -469,22 +484,23 @@ hr{
 }
 
 .ingresar-login{
-    height:30%;
+    
 }
 
 .ingresar-login:focus{
-    outline: none;
+    
 }
 
 
 .ingresar-login img{
-    width: 60%;
-    border: 3px solid transparent;
+    width:45%;
+    border: 2px solid transparent;
     border-radius:20px;
+    padding: 2% 2% 2% 2%;
 }
 
 .ingresar-login img:hover{
-    border: 3px solid rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 50px;
 }
 
