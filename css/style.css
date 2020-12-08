@@ -313,6 +313,15 @@ th:last-child {
 
 /*-------- LOGIN --------*/
 
+.principal-login{
+    width: 100%;
+}
+
+.logo-login{
+    width: 50%; 
+}
+
+
 .fondo-login{
     display:flex;
     justify-content: center;
@@ -322,10 +331,9 @@ th:last-child {
 
 .container1-login{
     background:  rgb(250, 250, 250);
-    height:650px;
-    width:850px;
+    height:90%;
+    width:45%;
     text-align: center;
-    margin: auto;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -340,36 +348,35 @@ th:last-child {
     align-items: center;
     flex-direction: column;
     height:250px;
+    width: 100%;
 }
 
 .button1-login{
-    padding: 5px 30px 5px 30px;
+    padding:7px;
+    width: 50%;
+    border-radius: 25px;
     background-color: rgb(202, 202, 202);
     color: #fff;
     border:2px solid rgb(202, 202, 202);
     color: #000;
-    border-radius: 20px;
+    border-radius: 15px;
     position: relative;
-    bottom:25px;
+    bottom: 15%;
 }
 
 .button2-login{
-    padding: 10px 60px 10px 60px;
+    padding: 2% 2% 2% 2%;
     background-color: rgb(202, 202, 202);
     color: #fff;
     border:2px solid rgb(202, 202, 202);
     color: #000;
-    border-radius: 20px;
-    position:relative;
-    bottom:50px;
+    border-radius:15px;
     font-weight: 400;
+    width: 55%;
 }
 
 .saltoline{
-    position:relative;
-    bottom:15px;
     color: black;
-    width:  230px;
     border: 1px solid #000;
 }
 
@@ -397,17 +404,17 @@ th:last-child {
 
 .form-input-login{
     padding:7px;
+    width: 50%;
     border-radius: 25px;
 }
 .contra-login{
     text-decoration: none;
     color:#000;
-    margin: 5px 10px 0px 0px;
     font-size: 12px;
 }
 
 .mediante-login{
-    font-weight: 700;
+    font-weight: 50%;
 }
 .contra-login:hover{
     text-decoration: none;
@@ -423,6 +430,8 @@ th:last-child {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    position: relative;
+    bottom: 8%;
 }
 input:focus{
     outline: none;
@@ -430,10 +439,9 @@ input:focus{
 
 .container2-login{
     display:flex;
-    justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    height: 220px;
+    height: 100%;
     position: relative;
     bottom:20px;
 }
@@ -461,7 +469,7 @@ hr{
 }
 
 .ingresar-login{
-    height:10px;
+    height:30%;
 }
 
 .ingresar-login:focus{
@@ -470,13 +478,14 @@ hr{
 
 
 .ingresar-login img{
-    width: 230px;
-    border: 1px solid rgb(0, 0, 0);
+    width: 60%;
+    border: 3px solid transparent;
     border-radius:20px;
 }
 
 .ingresar-login img:hover{
     border: 3px solid rgb(0, 0, 0);
+    border-radius: 50px;
 }
 
 .pie-login {
