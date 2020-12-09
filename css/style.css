@@ -564,6 +564,14 @@ hr{
 }
 
 /*-------- REGISTTER --------*/
+
+.fondo-register{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(156, 156, 156);
+}
+
 .imagen_register{
     display:flex;
     justify-content: center;
@@ -572,15 +580,12 @@ hr{
 
 }
 
-.register_1{
+.register_2 .register_1 .register_3 .register_4 .register_5 .register_6{
     position:relative;
-    background-color: #555;
+    
 }
 
-.register_2{
-    position:relative;
-    background-color: #555;
-}
+
 
 
 
@@ -626,4 +631,55 @@ hr{
     justify-content: space-around;
     align-items: flex-end;
     width:70px
+}
+
+ .register_1:hover{
+    background-color: rgb(155, 153, 153);
+    color: #fff;
+    border:2px solid rgb(29, 29, 29);
+    color: #000;
+    font-weight: 700;
+    border-radius: 20px;
+}
+
+.register_2:hover{
+    background-color: rgb(155, 153, 153);
+    color: #fff;
+    border:2px solid rgb(29, 29, 29);
+    color: #000;
+    font-weight: 700;
+    border-radius: 20px;
+}
+.register_3:hover{
+    background-color: rgb(155, 153, 153);
+    color: #fff;
+    border:2px solid rgb(29, 29, 29);
+    color: #000;
+    font-weight: 700;
+    border-radius: 20px;
+}
+.register_4:hover{
+    background-color: rgb(155, 153, 153);
+    color: #fff;
+    border:2px solid rgb(29, 29, 29);
+    color: #000;
+    font-weight: 700;
+    border-radius: 20px;
+}
+.register_5:hover{
+    background-color: rgb(155, 153, 153);
+    color: #fff;
+    border:2px solid rgb(29, 29, 29);
+    color: #000;
+    font-weight: 700;
+    border-radius: 20px;
+}
+
+.register_6:hover{
+    background-color: rgb(155, 153, 153);
+    color: #fff;
+    border:2px solid rgb(29, 29, 29);
+    color: #000;
+    font-weight: 700;
+    border-radius: 20px;
 }
