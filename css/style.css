@@ -3,7 +3,6 @@
     margin:0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    font-family: Poppins;
 }
 
 .navbar {
@@ -67,8 +66,18 @@ p {
 }
 
 .btn {
-    display: inline-block;
-    color: white;
+font-size: 12px;
+padding: 11px;
+padding-top: 13px;
+text-align: center;
+height: 40px;
+text-transform: capitalize;
+background-color: black;
+border: 0;
+color: white;
+letter-spacing: 2px;
+outline: 0;
+width: 100%;
 }
 
 .header {
@@ -139,7 +148,6 @@ h4 {
 
 .col-2 p {
     font-size: 14px;
-    text-align: center;
 
 }
 
@@ -155,13 +163,81 @@ h4 {
 }
 
 select {
-    border: 1px solid black;
+    border: 3px solid black;
     padding: 5px;
 }
 
 select:focus {
     outline: none;
 }
+
+.page-btn {
+    margin: 0 auto 80px;
+}
+
+.page-btn span {
+    display: inline-block;
+    border: 1px solid black;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.page-btn span:hover {
+    background: lightgray;
+    color: black;
+}
+
+/*-------- Unico Producto --------*/
+.producto-unico {
+    margin-top: 80px;
+}
+
+.producto-unico col-2 img {
+    padding: 0;
+}
+
+.producto-unico col-2 {
+    padding: 20px;
+}
+
+.producto-unico h4 {
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.producto-unico select {
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.producto-unico input {
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid black;
+}
+input:focus {
+    outline: none;
+}
+
+.small-img-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
 
 a {
     text-decoration: none;
@@ -713,7 +789,6 @@ hr{
     align-items: flex-end;
     width:70px
 }
-
 
 
 
