@@ -431,10 +431,9 @@ th:last-child {
     padding:1%;
     width: 50%;
     border-radius: 25px;
-    background-color: rgb(202, 202, 202);
+    background-color: #000;
     color: #fff;
     border:2px solid rgb(202, 202, 202);
-    color: #000;
     border-radius: 15px;
     position: relative;
     bottom: 15%;
@@ -458,10 +457,9 @@ th:last-child {
 }
 
 .button1-login:hover{
-    background-color: rgb(155, 153, 153);
+    background-color: #000;
     color: #fff;
     border:2px solid rgb(29, 29, 29);
-    color: #000;
     font-weight: 700;
     border-radius: 20px;
     font-family: Poppins;
@@ -484,6 +482,7 @@ th:last-child {
     padding:7px;
     width: 50%;
     border-radius: 25px;
+    font-family: Poppins;
 }
 .contra-login{
     text-decoration: none;
@@ -503,7 +502,8 @@ th:last-child {
 .regist-login{
     text-decoration: none;
     color:#000;
-    font-size: 13px;
+    font-size: 15px;
+    font-weight: 600;
     font-family: Poppins;
 }
 
@@ -562,14 +562,6 @@ input:focus{
 hr{
     color:black;
     width: 200px;
-}
-
-.ingresar-login{
-    
-}
-
-.ingresar-login:focus{
-    
 }
 
 .ingresar-login img{
