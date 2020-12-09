@@ -9,95 +9,44 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Asap:wght@500&family=Barlow+Condensed:wght@500&family=Spartan:wght@500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">    
 </head>
-<body>
+<body class="registerbody">
+    <main>
     <section class="register_section">
         <article class="imagen_register">
             <img src="../logo/lodoDef.jpg" alt="Logo" class="logo">
-            
         </article>
 
         <div class="register_1">
-            <p>
-                Regístrate con tu email y contraseña para ahorrar tiempo en tus próximas compras!
+            <p class = "registrate-">
+                ¡Regístrate con tu email y contraseña para ahorrar tiempo en tus próximas compras!
             </p>
-
         </div>
 
-        <div class="register_2">
-            <p>
-                Nombre
-               
-            </p>
-            <input type="text" id="Nombre" placeholder="Ingresa tu Nombre" >
-
+        <form class="principal-register">
+        <div class="register_">
+            <input type="text" id="Nombre" placeholder="  Nombre" class ="places-">
         </div>
-
-        <div class="register_3">
-            <p>
-                Apellido
-            </p>
-            <input type="text" id="Apellido" placeholder="Ingresa tu Apellido"  >
-
+        <div class="register_">
+            <input type="text" id="Apellido" placeholder="  Apellido" class ="places-">
         </div>
-
-        <div class="register_4">
-            <p>
-                Email
-            </p>
-            <input type="email" id="Email" placeholder="Ingresa tu Email"  >
-
+        <div class="register_">
+            <input type="email" id="Email" placeholder="  Email" class ="places-">
         </div>
-
-        <div class="register_5">
-            <p>
-                Contraseña
-            </p>
-            <input type="password" id="Contraseña" placeholder="Ingresa tu Contraseña" >
-
+        <div class="register_">
+            <input type="password" id="Contraseña" placeholder="  Contraseña" class ="places-">
         </div>
-        <div class="register_6">
-            <p>
-                Repetir Contraseña
-            </p>
-            <input type="password" id="Repetir Contraseña" placeholder="Repeti tu Contraseña" ><!--duda se puede escribir con espacios?? el id-->
-
-
+        <div class="register_">
+            <input type="password" id="Repetir-Contraseña" placeholder="  Confirmar contraseña" class ="places-"><!--duda se puede escribir con espacios?? el id-->
         </div>
+        </form>
+            
+        <input type="submit" class="button_register" value="Registrarme"/>
 
-        <div>
-            <input type="submit" class="button_register" value="Registrarme"/>
-
-        </div>
-
-        <footer class="pie-register">
-            <div class="pie2-register">
-                <h2 class="h2-login">AYUDA</h2>
-                <h2 class="h2-login">CONTACTO</h2>
-                <h2 class="h2-login">ATENCIÓN AL CLIENTE</h2>
-                <h2 class="h2-login">TÉRMINOS Y CONDICIONES</h2>
-            </div>
-            <div class="ejey-register">
-                <div class="redes-login">
-                <a href="#"><img src="../logo/instagram.png" alt="Instagram" class="ig"> </a>
-                <a href="#"><img src="../logo/facebook.png" alt="Facebook" class="fb"> </a>
-                  
-                </div>
-            </div>
-                </footer>
-                </section>
-
-
-
-
-
-
-
-
-
-        
     </section>
+    </main>
     
 </body>
 </html>
