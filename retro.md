@@ -1,6 +1,6 @@
 ### Retrospectiva sobre el primer sprint:
 
-#### En cuanto al primer sprint nos sentimos muy cómodos como grupo, si bien el segundo sprint fue algo mas complejo, nos adaptamos bien y supimos dividirr las tareas para poder lograr una distribucion eficiente.
+#### En cuanto al primer sprint nos sentimos muy cómodos como grupo, si bien el segundo sprint fue algo mas complejo, nos adaptamos bien y supimos dividir las tareas para poder lograr una distribucion eficiente.
 
 * Debemos comenzar a dividir el trabajo usando herramientas digitales como Trello para seguir un orden y seguimiento de los objetivos tanto individuales como grupales.
 * Por otro lado, debemos trabajar mucho mas ya que cada sprint tiene una dificultad mayor y da más tareas que realizar.
