@@ -167,7 +167,7 @@ h4 {
 
 .h2-detail{
     border: 2px solid transparent;
-    font-weight:100px;
+    padding: 5px 8px 5px 8px;
 }
 
 .h2-detail:hover{
@@ -318,13 +318,16 @@ a {
 .h2-footer{
     color: #000;
     font-size: 16px;
+    font-weight: 400;
+    font-family: Poppins;
 }
 
 .h2-footer:hover{
     color: #fff;
     background-color: #000;
     font-size: 16px;
-    border-radius: 15px;    
+    border-radius: 15px;
+    font-weight: 700;    
 }
 
 .ejey {
