@@ -364,6 +364,7 @@ table {
 .cart-info {
     display: flex;
     flex-wrap: wrap;
+    text-align: left;
 }
 
 th {
@@ -372,9 +373,12 @@ th {
     color: white;
     background: black;
 }
-
+thead th{
+    text-align: center;
+}
 td {
-    padding: 10px 30px;
+    padding-top: 10px;
+    text-align: center;
 }
 
 td input {
@@ -392,25 +396,9 @@ td img {
     margin-right: 10px;
 }
 
-.total-price {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.total-price table {
+.total-price td:not(:first-child) {
     border-top: 3px solid black;
-    width: 100%;
-    max-width: 350px;
 }
-
-td:last-child {
-    text-align: right;
-}
-
-th:last-child {
-    text-align: right;
-}
-
 .main{
     display:flex;
     justify-content: space-between;
