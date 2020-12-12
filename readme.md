@@ -19,5 +19,5 @@
 
 ###### Adjuntamos link de Figma con el workframe: https://www.figma.com/file/19Ed97sG29T8YXhfqthPAz/Untitled
 
-#### A continuación dejamos el Trello en donde estará el trabajo que hicimos y el orden que mantuvimos durante el segundo Sprint: https://trello.com/b/B9eiddS4/dead-fellas 
+##### A continuación dejamos el Trello en donde estará el trabajo que hicimos y el orden que mantuvimos durante el segundo Sprint: https://trello.com/b/B9eiddS4/dead-fellas 
 
