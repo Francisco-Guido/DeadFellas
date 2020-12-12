@@ -411,6 +411,11 @@ td img {
 .total-price td:not(:first-child) {
     border-top: 3px solid black;
 }
+
+.total-price{
+    padding-bottom: 100px;
+}
+
 .main{
     display:flex;
     justify-content: space-between;
@@ -418,6 +423,13 @@ td img {
     flex-direction: column;
 }
 
+.cupon-1{
+    background-color:#fff;
+    border: 2px solid rgb(105, 103, 103);
+    border-radius: 10px;
+    padding: 1% 1% 1% 100%;
+    font-family: Poppins;
+} 
 /*-------- LOGIN --------*/
 
 .principal-login{
