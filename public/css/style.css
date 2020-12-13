@@ -268,10 +268,9 @@ input:focus {
 }
 
 
-a {
+.a-images {
     text-decoration: none;
     display: inline-block;
-    padding: 8px 16px;
   }
   
   a:hover {
@@ -309,14 +308,16 @@ a {
 .pie .pie2 {
     color: rgb(255, 255, 255);
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    justify-content: space-around;
     direction: column;
     width: 600px;
-    flex-grow: 0.4;
+    flex-grow: 0.7;
+    position: relative;
+    top:5px;
+    height: 25px;
 }
  
-/* .redes{
+/*  .redes{
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
@@ -333,6 +334,7 @@ a {
     font-size: 16px;
     font-weight: 400;
     font-family: Poppins;
+    padding: 0px 10px 0px 10px;
 }
 
 .h2-footer:hover{
@@ -340,7 +342,8 @@ a {
     background-color: #000;
     font-size: 16px;
     border-radius: 15px;
-    font-weight: 700;    
+    font-weight: 700;
+    padding: 0px 10px 0px 10px;
 }
 
 /* .ejey {
@@ -363,7 +366,7 @@ a {
 .redes a {
     text-decoration: none;
     color: black;
-    ;
+    font-size: 8px;
 }
 /*-------- CARRITO --------*/
 .cart-page {
