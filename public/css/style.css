@@ -795,9 +795,9 @@ main{
 /* Boton Whatsapp */
 .btn-whatsapp {
     display:block;
-    width:70px;
-    height:70px;
-    color#fff;
+    width:76px;
+    height:47px;
+    color:#fff;
     position: fixed;
     right:20px;
     bottom:20px;
