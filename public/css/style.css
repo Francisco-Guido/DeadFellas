@@ -73,6 +73,13 @@ p {
     margin: 25px 0;
 }
 
+.small-container1{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
 .btn {
 font-size: 12px;
 padding: 11px;
