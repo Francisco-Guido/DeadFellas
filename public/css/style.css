@@ -114,9 +114,6 @@ margin-left: 5px;
 
 .small-container {
     max-width: 1080px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
 }
 
 .col-2 {
@@ -427,7 +424,7 @@ td img {
     background-color:#fff;
     border: 2px solid rgb(105, 103, 103);
     border-radius: 10px;
-    padding: 1% 1% 1% 100%;
+    padding: 1% 1% 1% 90%;
     font-family: Poppins;
 } 
 
