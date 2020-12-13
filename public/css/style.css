@@ -29,6 +29,7 @@ nav ul li {
 .carrito {
     text-decoration: none;
     color:black;
+    padding: 0% 10px 0% 10px;
 }
 
 .carrito:hover{
@@ -36,6 +37,7 @@ nav ul li {
     background-color: #000;
     color: #fff;
     font-weight: 400;
+    padding: 0% 10px 0% 10px;
 }
 
 p {
@@ -273,10 +275,10 @@ input:focus {
     display: inline-block;
   }
   
-  a:hover {
+  /* a:hover {
     background-color: #ddd;
     color: black;
-  }
+  } */
   
   .previous {
     background-color:lightgray;
@@ -798,8 +800,8 @@ main{
 /* Boton Whatsapp */
 .btn-whatsapp {
     display:block;
-    width:76px;
-    height:47px;
+    width:45px;
+    height:50px;
     color:#fff;
     position: fixed;
     right:20px;
