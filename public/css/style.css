@@ -371,6 +371,10 @@ input:focus {
     font-size: 8px;
 }
 /*-------- CARRITO --------*/
+.bodyCart{
+    height: 100vh;
+}
+
 .cart-page {
     margin: 80px auto;
 }
