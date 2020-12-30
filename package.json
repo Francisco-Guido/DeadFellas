@@ -2,7 +2,7 @@
   "name": "proyectonueve",
   "version": "1.0.0",
   "description": "*El target de la marca se enfoca en un público joven, entre los 18 y 35 años de edad y que se identifiquen con la marca.🤘*\r ### A continuación les dejamos los links de las páginas que hemos usado como referencia: \r * [AY NOT DEAD](http:/www.aynotdead.com)\r * [H&M](https://www2.hm.com/es_us/hombre/productos/camisetas-con-sin-mangas.html)\r * [RATIO](https://ratiocoffee.com/)\r * [APPLE](https://www.apple.com/la/)\r * [The Soap Co](https://thesoapco.org/)",
-  "main": "app.js",
+  "main": "source/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/FranciscoGuido-99/grupo_9_ManijaLibre#readme",
   "dependencies": {
+    "ejs": "^3.1.5",
     "express": "^4.17.1"
-  }
+  },
+  "devDependencies": {}
 }
