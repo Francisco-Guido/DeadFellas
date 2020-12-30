@@ -4,17 +4,18 @@ const path = require("path");
 
 // Vamos a usar como motor de vistas -> EJS
 app.set ('view engine', 'ejs')
-
 app.set('views', path.join(__dirname, './views'));
 
-const generalRouter = require('./routers/index');
-const productsRouter = require('./routers/products');
-const productsDetailRouter = require('./routers/productsDetail');
-const productsCartRouter = require('./routers/productsCart');
-const LoginRouter = require('./routers/login')
-const registerRouter = require('./routers/register');
+app.use(express.static(path.join(__dirname, '../public') ));
 
-app.use(express.static( path.join(__dirname, '../public') ));
+const generalRouter = require('./routers/indexRouter');
+const productsRouter = require('./routers/productsRouter');
+const productsDetailRouter = require('./routers/productsDetailRouter');
+const productsCartRouter = require('./routers/productsCartRouter');
+const loginRouter = require('./routers/loginRouter')
+const registerRouter = require('./routers/registerRouter');
+
+app.use(express.static(path.join(__dirname, '../public') ));
 
 app.use('/products', productsRouter);
 app.use('/', generalRouter);
