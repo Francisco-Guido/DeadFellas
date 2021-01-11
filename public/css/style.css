@@ -835,12 +835,12 @@ main{
     background-color: #000;
     color: #fff;
     border-radius: 15px;
-    padding: 5px;
-    font-size: 12px;
+    padding: 15px;
+    font-size: 18px;
 }
 
 .finish:hover{
     background-color: #000;
     color: #fff;
-    padding: 8px;
+    padding: 20px;
 }
