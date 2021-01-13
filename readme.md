@@ -10,7 +10,7 @@
 
 #### Los integrantes del grupo somos: Francisco Guido, Daniel Matsusaka y Fabrizio Franceschetti.
 ##### Les pasamos una breve descripción de cada uno!
-* 💻 Francisco Guido: Tengo 21 años, actualmente me encuentro trabajando en ICBC y realizando en curso de Programacion Web Full Stack en Digital House.
+* 💻 Francisco Guido: Tengo 21 años, actualmente me encuentro trabajando en ICBC y realizando el curso de Programacion Web Full Stack en Digital House.
 * 💻Daniel Matsusaka: Tengo 30 años, actualmente trabajo en agronomia como estudiante de doctorado en bioinformática y biología molecular, además soy ayudante de catedra de fisiología vegetal. ecofisiología 🌳
 * 💻 Fabrizio Franceschetti: Tengo 20 años, actualmente estudio la carrera de aviacion comercial y a la vez realizo el curso de Programación Web Full Stack
 
