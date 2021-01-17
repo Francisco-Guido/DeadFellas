@@ -845,4 +845,48 @@ main{
     padding: 6px;
 }
 
+.logodef{
+    width: 80%;
+}
 
+@media screen and (max-width:380px){
+
+.registerbody{
+}
+
+.register_section{
+    width: 100%;
+    margin: 0px;
+    height: 640px;
+}
+
+.register_1{
+    width: 300px;
+    height: 35px;
+}
+
+.registrate-{
+    font-size: 12px;
+    position: relative;
+    bottom:0%;
+
+}
+
+.principal-register{
+    position: relative;
+    bottom: 6%;
+}
+
+.places-{
+
+}
+
+.register_{
+    width: 70%;
+}
+
+.form-contro-file{
+    background-color: red;
+}
+
+}
