@@ -857,7 +857,7 @@ main{
 .register_section{
     width: 100%;
     margin: 0px;
-    height: 640px;
+    height: 100vh;
 }
 
 .register_1{
@@ -909,6 +909,10 @@ width: 0.1px;
 .button_register{
     position: relative;
     bottom: 10%; 
+}
+
+.logo{
+    width:80%;
 }
 
 }
