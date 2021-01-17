@@ -849,6 +849,27 @@ main{
     width: 80%;
 }
 
+.upavatar{
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    background-color: #b8b8b8;
+    cursor: pointer;
+    padding: 8px 5px 8px 5px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.form-control-file{
+width: 0.1px;
+ height: 0.1px;
+ opacity: 0;
+ overflow: hidden;
+ position: absolute;
+ z-index: -1;
+}
+
 @media screen and (max-width:380px){
 
 .registerbody{
@@ -915,4 +936,34 @@ width: 0.1px;
     width:80%;
 }
 
+}
+
+@media screen and (max-width:768px){
+
+.register_section{
+    width: 100%;
+    margin: 0px;
+    height: 100vh;
+    }
+
+    .upavatar{
+        font-size: 14px;
+        font-weight: 400;
+        color: #000;
+        background-color: #b8b8b8;
+        cursor: pointer;
+        padding: 8px 5px 8px 5px;
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 15px;
+    }
+    
+    .form-control-file{
+    width: 0.1px;
+     height: 0.1px;
+     opacity: 0;
+     overflow: hidden;
+     position: absolute;
+     z-index: -1;
+    }
 }
