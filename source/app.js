@@ -8,12 +8,15 @@ app.set('views', path.join(__dirname, './views'));
 
 app.use(express.static(path.join(__dirname, '../public') ));
 
+app.use(express.urlencoded({extended:false}));
+app.use(express.json());
+
 const generalRouter = require('./routers/indexRouter');
 const productsRouter = require('./routers/productsRouter');
- const productsDetailRouter = require('./routers/productsDetailRouter');
- const productsCartRouter = require('./routers/productsCartRouter');
+const productsDetailRouter = require('./routers/productsDetailRouter');
+const productsCartRouter = require('./routers/productsCartRouter');
 const loginRouter = require('./routers/loginRouter')
- const registerRouter = require('./routers/registerRouter');
+const registerRouter = require('./routers/registerRouter');
 
 app.use(express.static(path.join(__dirname, '../public') ));
 
