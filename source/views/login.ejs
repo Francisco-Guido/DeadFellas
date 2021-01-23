@@ -17,25 +17,24 @@
             <img src="images/logo/lodoDef.jpg" alt="Logo" class="logo-login">
         </article>
         
-            <form class="formularios-login">
-                <input type="email" class="form-input-login" id="txtEmail" placeholder="Ingresá tu Email" required/>
-                <input type="password" class="form-input-login" id="txtPassword" placeholder="Contraseña"/>
+            <form class="formularios-login" method="POST" action="">
+                <input type="email" class="form-input-login" id="txtEmail" placeholder="Ingresá tu Email" name="email"/>
+                <input type="password" class="form-input-login" id="txtPassword" placeholder="Contraseña" name="password"/>
                 <div class="passw-container-login">
                     <a href="#" class ="contra-login">¿Olvidaste tu contraseña?</a>
                 </div>
                     <input type="submit" class="button1-login" value="Ingresar"/>
-                    
                 </div>
-                
+                <!-- <div class="container2-login">
+                    <p class="mediante-login">Ingresar mediante:</p>            
+                    
+                    <article class="ingresar-login"><a href="#" class="vinc"><img src="images/logo/google_logo.png" alt="Google"> </a>  
+                    </article> -->
+                    <a href="#" class ="regist-login">¿No tienes cuenta? Regístrate aquí!</a>
+                    <!-- </div> -->
             </form>
         
-            <div class="container2-login">
-            <p class="mediante-login">Ingresar mediante:</p>            
             
-            <article class="ingresar-login"><a href="#" class="vinc"><img src="images/logo/google_logo.png" alt="Google"> </a>  
-            </article>
-            <a href="#" class ="regist-login">¿No tienes cuenta? Regístrate aquí!</a>
-            </div>
         </section>
     
 </body>
