@@ -1,3 +1,10 @@
+@import 'partials/_index.css';
+@import 'partials/_login.css';
+@import 'partials/_products.css';
+@import 'partials/productsCart.css';
+@import 'partials/_productDetail.css';
+@import 'partials/_register.css';
+
 *{
     padding:0;
     margin:0;
@@ -1011,9 +1018,6 @@ width: 0.1px;
 }
 
 @media screen and (max-width:380px){
-
-.registerbody{
-}
 
 .register_section{
     width: 100%;
