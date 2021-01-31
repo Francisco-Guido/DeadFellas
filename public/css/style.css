@@ -5,6 +5,16 @@
     font-family:Poppins;
 }
 
+.envios {
+    width: 100%;
+    height: 20px;
+    background: black;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 100;
+}
+
 .navbar {
     display: flex;
     align-items: center;
@@ -398,14 +408,23 @@ input:focus {
 
 /*-------- Footer --------*/
 .pie {
-    background: white;
     font-size: 10px;
-    display: flex;
-    justify-content: space-around;
-    height: 60px;
+    height: 80px;
     width: 100%;
     
 }
+
+.footer-container::after {
+    content: '';
+    background: grey;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(820px);
+}
+
 
 .pie .pie2 {
     color: rgb(255, 255, 255);
@@ -418,6 +437,14 @@ input:focus {
     top:5px;
     height: 25px;
 }
+
+.pie .pie3 {
+    clear: both;
+    background: white;
+    margin-top: 50px;
+    text-align: center;
+    padding: 10px;
+}
  
 /*  .redes{
     display: flex;
@@ -425,6 +452,8 @@ input:focus {
     align-items: flex-end;
     width:100%;
 } */
+
+
 
 .fb,
 .ig{
@@ -469,6 +498,11 @@ input:focus {
     text-decoration: none;
     color: black;
     font-size: 8px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
 }
 /*-------- CARRITO --------*/
 .bodyCart{
