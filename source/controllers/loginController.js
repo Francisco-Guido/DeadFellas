@@ -1,6 +1,6 @@
 const fs = require("fs");
 const path = require("path");
-const bcrypt=require("bcrypt"); 
+const bcrypt=require("bcryptjs"); 
 /* const { send } = require("process"); */
 
 let usuarios = fs.readFileSync(path.join(__dirname, '../database/usuarios.json'), 'utf8');
