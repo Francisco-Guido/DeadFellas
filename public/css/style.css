@@ -202,7 +202,7 @@ font-size: 12px;
 padding: 11px;
 padding-top: 13px;
 text-align: center;
-height: 40px;
+height: 55px;
 text-transform: capitalize;
 background-color: black;
 border: 0;
@@ -213,14 +213,16 @@ width: 70%;
 margin-left: 5px;
 outline: none;
 text-decoration: none;
+display: inline-block;
+margin-top: 20px;
 }
 
-.btn:hover{
+/* .btn:hover{
     border-width: 1px;
     border-style: solid;
     border-color: #000;
     font-size: 12px;
-}
+} */
 
 
 .header {
@@ -418,10 +420,12 @@ input:focus {
     font-size: 10px;
     height: 80px;
     width: 100%;
+    border-top: 1px solid grey;
+    padding-top: 20px;
     
 }
 
-.footer-container::after {
+/* .footer-container::after {
     content: '';
     background: grey;
     width: 100%;
@@ -430,7 +434,7 @@ input:focus {
     position: absolute;
     bottom: 0;
     transform: translateY(820px);
-}
+} */
 
 
 .pie .pie2 {
@@ -1115,5 +1119,16 @@ width: 0.1px;
      overflow: hidden;
      position: absolute;
      z-index: -1;
+    }
+}
+
+
+/* media query productDetail para menos de 600 screen size  */
+
+@media only screen and (max-width:1093px) {
+
+    .btn{
+        height: 55px;
+        margin-top: 20px;
     }
 }
