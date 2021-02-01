@@ -12,6 +12,46 @@
     font-family:Poppins;
 }
 
+/* movimiento */
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: cambio 15s infinite alternate linear;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img{
+    width: 100%;
+}
+
+@keyframes cambio {
+    0% { margin-left: 0;}
+    20% { margin-left: 0;}
+
+    25% { margin-left: -100%;}
+    45% { margin-left: -100%;}
+
+    50% { margin-left: -200%;}
+    70% { margin-left: -200%;}
+    
+    75% { margin-left: -300%;}
+    100% { margin-left: -300%;}
+}
+
+
+
+
 
 .envios {
     width: 100%;
@@ -229,7 +269,7 @@ margin-top: 20px;
     margin: 0 auto 80px;
     position: relative;
     line-height: 60px;
-    color: #555;
+    color: black;
 }
 
 .tittle::after {
