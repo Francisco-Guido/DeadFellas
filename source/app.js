@@ -2,6 +2,8 @@ const express = require("express");
 const app = express();
 const path = require("path");
 
+let port = process.env.PORT || 3000;
+
 // Vamos a usar como motor de vistas -> EJS
 app.set ('view engine', 'ejs')
 app.set('views', path.join(__dirname, './views'));
