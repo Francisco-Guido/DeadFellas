@@ -4,12 +4,6 @@ const path = require("path");
 const middlewareEsUsuario = require('./middlewares/esUsuario')
 var session = require('express-session')
 
-<<<<<<< HEAD
-=======
-let port = process.env.PORT || 3000;
-
-// Vamos a usar como motor de vistas -> EJS
->>>>>>> 57628ea073cc059dfddc430a59cf670f711a6b4e
 app.set ('view engine', 'ejs')
 app.set('views', path.join(__dirname, './views'));
 
