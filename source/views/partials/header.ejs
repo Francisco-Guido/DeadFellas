@@ -8,10 +8,14 @@
 </div>
 <nav>
   <ul id="MenuItems">
+    <% if(typeof usuarioLogueado == 'undefined') { %>
       <li><a href="" class = "carrito">BUSCAR</a></li>
       <li><a href="" class = "carrito">MI CUENTA</a></li>
       <li><a href="" class = "carrito"><i class="fa fa-shopping-cart" aria-hidden="true"></i> </a></li>
-  </ul>
+      <% } else { %>
+        <li>Bienvenix</li>
+      <% } %>
+    </ul>
 </nav>
 <img src="/images/logo/menu.png" class="menu-icon" onclick="menutoggle()">
 </div>

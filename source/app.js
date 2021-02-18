@@ -1,15 +1,18 @@
 const express = require("express");
 const app = express();
 const path = require("path");
+const middlewareEsUsuario = require('./middlewares/esUsuario')
+var session = require('express-session')
 
-// Vamos a usar como motor de vistas -> EJS
 app.set ('view engine', 'ejs')
 app.set('views', path.join(__dirname, './views'));
 
 app.use(express.static(path.join(__dirname, '../public') ));
 
+app.use(session({secret: "Adloremipsum"}));
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
+app.use(middlewareEsUsuario)
 
 const generalRouter = require('./routers/indexRouter');
 const productsRouter = require('./routers/productsRouter');
@@ -32,35 +35,3 @@ app.use('/register', registerRouter);
 app.listen(3000, function(){
     console.log("Escuchando servidor 3000")
 });
-
-
-
-
-
-
-/* app.use(express.static(path.join(__dirname, 'public')));
-
-
-app.get("/", function(req,res){
-    res.sendFile(__dirname + "/views/index.html");
-});
-
-app.get("/login", function(req,res){
-    res.sendFile(__dirname + "/views/login.html");
-});
-
-app.get("/productCart", function(req,res){
-    res.sendFile(__dirname + "/views/productCart.html");
-});
-
-app.get("/productDetail", function(req,res){
-    res.sendFile(__dirname + "/views/productDetail.html");
-});
-
-app.get("/products", function(req,res){
-    res.sendFile(__dirname + "/views/products.html");
-});
-
-app.get("/register", function(req,res){
-    res.sendFile(__dirname + "/views/register.html");
-}); */

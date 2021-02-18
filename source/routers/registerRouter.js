@@ -16,6 +16,7 @@ var storage = multer.diskStorage({
    
 var upload = multer({ storage: storage })
 
+// Rutas de registo
 router.get('/', registerController.register);
 router.post('/', upload.single('avatar'), registerController.create);
 
