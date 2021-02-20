@@ -14,7 +14,8 @@ checkUser: function(req,res){
     for(let i = 0; i <usuarios.length; i++){
         if(usuarios[i].email == req.body.email){
             if(bcrypt.compareSync(req.body.password, usuarios[i].password)){
-               return res.render('index')
+                req.session.usuarioLogueado = true;
+                return res.redirect('/')
             } else {
                 return res.send("Los datos ingresados son incorrectos")
             }
@@ -25,3 +26,4 @@ checkUser: function(req,res){
 }
 
 }
+

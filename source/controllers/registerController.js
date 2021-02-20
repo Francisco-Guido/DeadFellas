@@ -15,6 +15,7 @@ res.render('register');
 },
 create: function (req, res){
     usuarios.push({
+            name: req.body.name,
             email:req.body.email,
             password: bcrypt.hashSync(req.body.password, 12),
             avatar: req.file.filename

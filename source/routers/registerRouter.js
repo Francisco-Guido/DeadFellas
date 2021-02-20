@@ -4,6 +4,7 @@ const registerController = require('../controllers/registerController');
 const multer = require('multer')
 const bcrypt=require("bcryptjs");
 const path=require("path")
+const middlewareLogueado = require('../middlewares/logueado');
 
 var storage = multer.diskStorage({
     destination: function (req, file, cb) {
@@ -17,8 +18,8 @@ var storage = multer.diskStorage({
 var upload = multer({ storage: storage })
 
 // Rutas de registo
-router.get('/', registerController.register);
-router.post('/', upload.single('avatar'), registerController.create);
+router.get('/', middlewareLogueado, registerController.register);
+router.post('/', middlewareLogueado, upload.single('avatar'), registerController.create);
 
 
 
