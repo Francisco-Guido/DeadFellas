@@ -7,4 +7,4 @@
 * Debemos continuar dividiendo las tareas como grupo, establecer objetivos individuales y brindarnos ayuda entre nosotros.
 * No debemos hacer menos ya que los sprints aumentan su dificultad y nos atrasariamos con las fechas de entrega. El esfuerzo debe ser continuo y sin pausa.
 * Si bien cometer errores es parte del aprendizaje de la programacion, debemos ir achicando ese margen para lograr la mayor eficiencia.
-
+* La comunicacion entre el equipo resulto eficiente, por lo que pudimos conseguir entregar el sprint en tiempo y forma.
