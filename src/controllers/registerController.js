@@ -14,7 +14,7 @@ usuarios = JSON.parse(usuarios);
  res.render('register');
  },
  create: function (req, res){
-     db.Dead.usuarios.push({
+     usuarios.push({
              name: req.body.name,
              email:req.body.email,
              password: bcrypt.hashSync(req.body.password, 12),
