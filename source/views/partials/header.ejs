@@ -9,12 +9,16 @@
 <nav>
   <ul id="MenuItems">
     <% if(typeof usuarioLogueado == 'undefined') { %>
+      <li><a href="http://localhost:3000/products" class = "carrito">SHOP</a></li>
+      <li><a href="" class = "carrito">COLECCIONES</a></li>
       <li><a href="" class = "carrito">BUSCAR</a></li>
       <li><a href="http://localhost:3000/login" class = "carrito">MI CUENTA</a></li>
       <li><a href="http://localhost:3000/productsCart" class = "carrito"><i class="fa fa-shopping-cart" aria-hidden="true"></i> </a></li>
       <% } else { %>
 
         <li> Bienvenidx </li> 
+        <li><a href="http://localhost:3000/products" class = "carrito">SHOP</a></li>
+        <li><a href="" class = "carrito">COLECCIONES</a></li>
         <li><a href="" class = "carrito">BUSCAR</a></li>
         <li><a href="http://localhost:3000/productsCart" class = "carrito"><i class="fa fa-shopping-cart" aria-hidden="true"></i> </a></li>
         
