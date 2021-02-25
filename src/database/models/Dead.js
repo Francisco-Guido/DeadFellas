@@ -1,7 +1,6 @@
-module.exports = function (sequelize, dataTypes){
-    let alias = "dead_Fellas"
-
-    let cols = {
+module.exports = function(sequelize, dataTypes){
+    const alias = "Dead"
+    const cols = {
 
         id: {
             type: dataTypes.INTEGER.UNSIGNED,
@@ -11,7 +10,7 @@ module.exports = function (sequelize, dataTypes){
         },
         name: {
            type: dataTypes.STRING(45),
-           notNull: true,
+           alowNull: true,
         },
         surname: {
             type: dataTypes.STRING(45),
@@ -19,12 +18,12 @@ module.exports = function (sequelize, dataTypes){
         },
         email: {
             type: dataTypes.STRING(45),
-            notNull: true,
+            allowNull: true,
 
         },
         password: {
             type: dataTypes.STRING(225),
-            notNull: true,
+            allowNull: true,
 
         },
         repassword: {
@@ -34,13 +33,12 @@ module.exports = function (sequelize, dataTypes){
         
     }
 
-    let config = {
-            tableName: 'users_df',
+    const config = {
+            tableName: "users_df",
             timestamps: true,
-            underscored: true,
     }
 
-    const Dead = sequelize.define (alias, cols, config);
+    const Dead = sequelize.define(alias, cols, config);
 
     return Dead
 }
