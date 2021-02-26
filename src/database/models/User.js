@@ -1,5 +1,5 @@
 module.exports = function(sequelize, dataTypes){
-    const alias = "Dead"
+    const alias = "User"
     const cols = {
 
         id: {
@@ -10,25 +10,31 @@ module.exports = function(sequelize, dataTypes){
         },
         name: {
            type: dataTypes.STRING(45),
-           alowNull: true,
+
         },
         surname: {
             type: dataTypes.STRING(45),
-            
+            alowNull: true,
         },
         email: {
             type: dataTypes.STRING(45),
-            allowNull: true,
+
 
         },
         password: {
             type: dataTypes.STRING(225),
-            allowNull: true,
+
 
         },
         repassword: {
             type: dataTypes.STRING(225),
-            
+            alowNull: true,
+        },
+        created_at: {
+            type: dataTypes.DATE
+        },
+        updated_at: {
+            type: dataTypes.DATE
         }
         
     }
@@ -36,9 +42,10 @@ module.exports = function(sequelize, dataTypes){
     const config = {
             tableName: "users_df",
             timestamps: true,
+            underscored: true
     }
 
-    const Dead = sequelize.define(alias, cols, config);
+    const User = sequelize.define(alias, cols, config);
 
-    return Dead
+    return User
 }

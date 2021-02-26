@@ -30,32 +30,50 @@
             </p>
         </div>
 
-        <form class="principal-register" method="post" action="" enctype="multipart/form-data">  
+        <!-- <form class="principal-register" action="/register/created" method="post"  enctype="multipart/form-data">  
          <div class="register_">
             <input type="text" id="Nombre" placeholder="Nombre" class ="places-" name="name">
         </div>
-        <!-- <div class="register_">
-            <input type="text" id="Apellido" placeholder="Apellido" class ="places-" name="apellido"> 
-         </div> -->
+        <input type="text" name="Nombre">
         <div class="register_">
             <input type="email" id="email" placeholder="Email" class ="places-" name="email">
         </div>
         <div class="register_">
             <input type="password" id="password" placeholder="Contraseña" class ="places-" name="password">
         </div>
-        <!-- <div class="register_">
-            <input type="password" id="Repetir-Contraseña" placeholder="Confirmar contraseña" class ="places-" name="repeatpassword">
-        </div> -->
+
         <div class="register_">
             <label for="exampleFormControlFile1" class="upavatar">Subí tu avatar!</label>
             <input type="file" class="form-control-file" id="exampleFormControlFile1" name="avatar">
         </div> 
         <div class = "register_2">
-        <input type="submit" class="button_register" value="Registrarme"/>
+
         </div>
-        </form>
+
+        <button type="submit">Guardar</button>
+        </form> -->
             
-        
+
+        <form class="formularios-login" method="POST" action="/register/login">
+            
+            <input type="text" class="form-input-login" id="txtEmail" placeholder="Name" name="name"/>
+            <input type="text" class="form-input-login" id="txtPassword" placeholder="Surname" name="surname"/>
+
+            <input type="email" class="form-input-login" id="txtEmail" placeholder="Ingresá tu Email" name="email"/>
+            <input type="password" class="form-input-login" id="txtPassword" placeholder="Contraseña" name="password"/>
+            <div class="passw-container-login">
+                <a href="#" class ="contra-login">¿Olvidaste tu contraseña?</a>
+            </div>
+                <input type="submit" class="button1-login" value="Ingresar"/>
+            </div>
+            <!-- <div class="container2-login">
+                <p class="mediante-login">Ingresar mediante:</p>            
+                
+                <article class="ingresar-login"><a href="#" class="vinc"><img src="images/logo/google_logo.png" alt="Google"> </a>  
+                </article> -->
+                <a href="http://localhost:3000/register" class ="regist-login">¿No tienes cuenta? Regístrate aquí!</a>
+                <!-- </div> -->
+        </form>
 
     </section>
     </main>

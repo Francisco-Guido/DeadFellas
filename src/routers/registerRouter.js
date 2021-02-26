@@ -21,8 +21,10 @@ var upload = multer({ storage: storage })
 // router.get('/', middlewareLogueado, registerController.register);
 // router.post('/', middlewareLogueado, upload.single('avatar'), registerController.create);
 
-router.post ('/', registerController.create)
+router.post ('/created', registerController.create)
 
+router.get ('/', registerController.register)
 
+router.post ('/login',registerController.login )
 
 module.exports = router;

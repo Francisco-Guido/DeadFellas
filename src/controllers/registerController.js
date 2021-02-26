@@ -44,19 +44,28 @@ const db = require ('../database/models');
 
 module.exports = {
     create: function (req, res) {
-        db.Dead.create ({
-            name: req.body.name,
-            surname: req.body.surname,
-            email: req.body.email,
-            password: req.body.password,
-            repassword: req.body.repassword,
-                    })
-                    .then(function(data){
-                        res.redirect('/')
-                    })
-                    .catch (function(e){
-                        res.send(e)
-                    })
+
+        res.send (req.body)
+        // db.User.create ({
+        //     name: req.body.name,
+        //     surname: null,
+        //     email: req.body.email,
+        //     password: req.body.password,
+        //     repassword: null,
+        //             })
+        //             .then(function(data){
+        //                 // res.redirect('/')
+        //                 res.send(data)
+        //             })
+        //             .catch (function(e){
+        //                 res.send(e)
+        //             })
+                },
+                register: function (req, res) {
+                    res.render ('register')
+                },
+                login: function (req,res) {
+                    res.send(req.body)
                 }
             }
 
