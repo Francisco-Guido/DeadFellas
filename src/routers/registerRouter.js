@@ -6,16 +6,16 @@ const bcrypt=require("bcryptjs");
 const path=require("path")
 const middlewareLogueado = require('../middlewares/logueado');
 
-var storage = multer.diskStorage({
-    destination: function (req, file, cb) {
-      cb(null, path.join(__dirname, '../../public/images/avatars'))
-    },
-    filename: function (req, file, cb) {
-      cb(null, req.body.email + Date.now() + path.extname(file.originalname))
-    }
-  })
+// var storage = multer.diskStorage({
+//     destination: function (req, file, cb) {
+//       cb(null, path.join(__dirname, '../../public/images/avatars'))
+//     },
+//     filename: function (req, file, cb) {
+//       cb(null, req.body.email + Date.now() + path.extname(file.originalname))
+//     }
+//   })
    
-var upload = multer({ storage: storage })
+// var upload = multer({ storage: storage })
 
 // Rutas de registo
 // router.get('/', middlewareLogueado, registerController.register);
@@ -25,6 +25,6 @@ router.post ('/created', registerController.create)
 
 router.get ('/', registerController.register)
 
-router.post ('/login',registerController.login )
+router.post ('/login',registerController.login ) 
 
 module.exports = router;

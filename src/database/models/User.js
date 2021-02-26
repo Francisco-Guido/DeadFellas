@@ -19,7 +19,6 @@ module.exports = function(sequelize, dataTypes){
         email: {
             type: dataTypes.STRING(45),
 
-
         },
         password: {
             type: dataTypes.STRING(225),
@@ -31,17 +30,19 @@ module.exports = function(sequelize, dataTypes){
             alowNull: true,
         },
         created_at: {
-            type: dataTypes.DATE
+            type: dataTypes.DATE,
+            alowNull: true,
         },
         updated_at: {
-            type: dataTypes.DATE
+            type: dataTypes.DATE,
+            alowNull: true,
         }
         
     }
 
     const config = {
             tableName: "users_df",
-            timestamps: true,
+            // timestamps: true,
             underscored: true
     }
 

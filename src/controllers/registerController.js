@@ -40,26 +40,29 @@ usuarios = JSON.parse(usuarios); */
     
 //  }
 
-const db = require ('../database/models');
+const db = require ('../database/models/');
 
 module.exports = {
     create: function (req, res) {
 
         res.send (req.body)
-        // db.User.create ({
-        //     name: req.body.name,
-        //     surname: null,
-        //     email: req.body.email,
-        //     password: req.body.password,
-        //     repassword: null,
-        //             })
-        //             .then(function(data){
-        //                 // res.redirect('/')
-        //                 res.send(data)
-        //             })
-        //             .catch (function(e){
-        //                 res.send(e)
-        //             })
+        db.User.create ({
+            name: req.body.name,
+            surname: null,
+            email: req.body.email,
+            password: req.body.password,
+            repassword: null,
+        }, {
+            timestamps: false
+        
+                    })
+                    // .then(function(data){
+                    //     // res.redirect('/')
+                    //     res.send(data)
+                    // })
+                    // .catch (function(e){
+                    //     res.send(e)
+                    // })
                 },
                 register: function (req, res) {
                     res.render ('register')
@@ -68,4 +71,3 @@ module.exports = {
                     res.send(req.body)
                 }
             }
-
