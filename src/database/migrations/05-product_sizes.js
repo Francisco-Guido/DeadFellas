@@ -10,13 +10,21 @@ module.exports = {
         allowNull:false
       },
       size_id:{
-        type: Sequelize.dataTypes.INTEGER(10).UNSIGNED,
-        alowNull: false
+        type: Sequelize.DataTypes.INTEGER(10).UNSIGNED,
+        alowNull: false,
+        references: {
+          model: 'sizes',
+          key: 'id'
+        }
     },
     product_id: {
-        type: Sequelize.dataTypes.INTEGER(10).UNSIGNED,
-        alowNull: false
-    },
+        type: Sequelize.DataTypes.INTEGER(10).UNSIGNED,
+        alowNull: false,
+        references: {
+          model: 'products',
+          key: 'id'
+        }
+      }
 })
 },
   down: async (queryInterface, Sequelize) => {

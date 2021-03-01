@@ -21,20 +21,24 @@ module.exports = {
         type: Sequelize.DataTypes.INTEGER(10),
       },
       photo1:{ 
-        type: Sequelize.dataTypes.STRING(100)
+        type: Sequelize.DataTypes.STRING(100)
       },        
       photo2: {
-        type: Sequelize.dataTypes.STRING(100)
+        type: Sequelize.DataTypes.STRING(100)
       },
       photo3: {
-        type: Sequelize.dataTypes.STRING(100)
+        type: Sequelize.DataTypes.STRING(100)
       },
       photo4: {
-        type: Sequelize.dataTypes.STRING(100)
+        type: Sequelize.DataTypes.STRING(100)
       },
       collection_id: {
-          type: Sequelize.dataTypes.INTEGER(10).UNSIGNED,
-          allowNull: false
+          type: Sequelize.DataTypes.INTEGER(10).UNSIGNED,
+          allowNull: false,
+          references: {
+            model: 'collections',
+            key: 'id'
+          }
       }
     })
   },
