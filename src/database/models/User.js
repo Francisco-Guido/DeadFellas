@@ -8,21 +8,25 @@ module.exports = function(sequelize, dataTypes){
             primaryKey: true,
             
         },
+        rol:{
+            type: dataTypes.INTEGER(10).UNSIGNED,
+            allowNull: false
+        },
         name: {
            type: dataTypes.STRING(45),
 
         },
         surname: {
             type: dataTypes.STRING(45),
-            alowNull: true,
+            alowNull: false,
         },
         email: {
-            type: dataTypes.STRING(45),
+            type: dataTypes.STRING(45),      allowNull: false,
 
         },
         password: {
             type: dataTypes.STRING(225),
-
+            allowNull: false,
 
         },
         repassword: {
@@ -41,7 +45,7 @@ module.exports = function(sequelize, dataTypes){
     }
 
     const config = {
-            tableName: "users_df",
+            tableName: "users",
             timestamps: true,
             underscored: true
     }
