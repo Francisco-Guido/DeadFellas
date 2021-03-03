@@ -20,6 +20,7 @@ const productsDetailRouter = require('./routers/productsDetailRouter');
 const productsCartRouter = require('./routers/productsCartRouter');
 const loginRouter = require('./routers/loginRouter')
 const registerRouter = require('./routers/registerRouter');
+const createProductRouter = require('./routers/createProductRouter')
 
 app.use(express.static(path.join(__dirname, '../public') ));
 
@@ -29,6 +30,7 @@ app.use('/productsDetail', productsDetailRouter);
 app.use('/productsCart', productsCartRouter);
 app.use('/login', loginRouter);
 app.use('/register', registerRouter);
+app.use('/createProduct', createProductRouter);
 
 
 

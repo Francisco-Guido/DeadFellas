@@ -11,7 +11,7 @@ module.exports = {
     log: function(req,res){
     res.render('login');
 },
-checkUser: function(req,res){
+ checkUser: function(req,res){
     for(let i = 0; i <usuarios.length; i++){
         if(usuarios[i].email == req.body.email){
             if(bcrypt.compareSync(req.body.password, usuarios[i].password)){
@@ -24,8 +24,22 @@ checkUser: function(req,res){
         }
     }
     return res.send("Usuario no registrado")
-}
+} 
 
 }
 
+/* checkUser: function(req,res){
+    for(let i = 0; i <usuarios.length; i++){
+        if(usuarios[i].email == req.body.email){
+            if(bcrypt.compareSync(req.body.password, usuarios[i].password)){
+                req.session.usuarioLogueado = true;
+                return res.redirect('/')
+            } else {
+                return res.send("Los datos ingresados son incorrectos")
+            }
+            
+        }
+    }
+    return res.send("Usuario no registrado")
+} */
 

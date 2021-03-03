@@ -8,20 +8,17 @@ module.exports = function(sequelize, dataTypes){
             primaryKey: true,
             
         },
-        rol:{
-            type: dataTypes.INTEGER(10).UNSIGNED,
-            allowNull: false
-        },
         name: {
            type: dataTypes.STRING(45),
-
+           allowNull: false,
         },
         surname: {
             type: dataTypes.STRING(45),
-            alowNull: false,
+            allowNull: false,
         },
         email: {
-            type: dataTypes.STRING(45),      allowNull: false,
+            type: dataTypes.STRING(45),      
+            allowNull: false,
 
         },
         password: {
