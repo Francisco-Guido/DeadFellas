@@ -17,6 +17,13 @@ module.exports = {
 },
     createProduct: function(req,res){
         res.render('create')
+    },
+
+    pushProducts: function(req,res){
+        db.Product.findAll()
+         .then (function(vistaProductos){
+             res.render('products', {vistaProductos:vistaProductos}) 
+         })
     }
 }
 

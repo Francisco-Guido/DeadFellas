@@ -46,43 +46,19 @@
         </select>
     </div>
 
+
+
     <div class="row">
+        <% for (let i = 0; i < Product.length; i++){ %>
         <div class="col-2">
-            <img src="images/productos/gorra.jpg">
-            <h4>REMERA MATRIX DARK ACID</h4>
-            <p>$2.590</p>
-        </div>
-        <div class="col-2">
-            <img src="images/productos/gorra2.jpg">
-            <h4>REMERA CRYPTOCHILD </h4>
-            <p>$2.590</p>
-        </div>
-        <div class="col-2">
-            <img src="images/productos/remera 1.jpg">
-            <h4>REMERA SPITFIRE </h4>
-            <p>$2.590</p>
-        </div>
-        <div class="col-2">
-            <img src="images/productos/remera 2.jpg">
-            <h4>REMERA SICK</h4>
-            <p>$2.590</p>
-        </div>
-        <div class="col-2">
-            <img src="images/productos/remera 3.jpg">
-            <h4>REMERA MATRIX DARK ACID</h4>
-            <p>$2.590</p>
-        </div>
-        <div class="col-2">
-            <img src="images/productos/remera 4.jpg">
-            <h4>REMERA CRYPTOCHILD </h4>
-            <p>$2.590</p>
-        </div>
-        <div class="col-2">
-            <img src="images/productos/jacket.jpg">
-            <h4>REMERA SPITFIRE </h4>
-            <p>$2.590</p>
+            <h4><%= product.[i].name %></h4>
+            <p><%= product.[i].price %></p>
         </div>
     </div>
+    <% } %>
+ 
+
+    
     <div class="page-btn">
         <span>1</span>
         <span>2</span>
