@@ -1,4 +1,9 @@
+const db = require ('../database/models/');
+
 module.exports = {
-    prod: function(req,res){
-    res.render('products');
+pushProducts: function(req,res){
+    db.Product.findAll()
+     .then (function(vistaProductos){
+         res.render('products', {vistaProductos:vistaProductos}) 
+     })
 }}
