@@ -8,6 +8,18 @@
 </head>
 <body>
     
+    <h1>Editar una nota</h1>
+            <form action="/detail/<%= detail.id %>/?_method=PUT" method="POST">
+                <div>
+                    <label for="">Producto</label>
+                    <input type="text" name="name" value="<%= detail.name%>">
+                </div>
+                <div>
+                    <label for="message">Precio</label>
+                    <input type="text" name="price" value="<%= detail.price%>">
+                </div>
+                <button type="submit">Editar</button>
+            </form>
     
 
 </body>

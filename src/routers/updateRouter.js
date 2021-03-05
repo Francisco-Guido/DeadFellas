@@ -7,7 +7,9 @@ router.get('/updateProduct', updateController.update);
 
 router.delete('/delete/:id', updateController.delete);
 
+router.get('/detail/:id', updateController.detail);
 
+router.put('/detail/:id', updateController.modificar);
 
 
 
