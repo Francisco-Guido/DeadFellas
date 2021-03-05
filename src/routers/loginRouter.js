@@ -5,8 +5,8 @@ const bcrypt=require("bcryptjs");
 const middlewareLogueado = require('../middlewares/logueado');
 
 
-router.get('/',middlewareLogueado, loginController.log);
-router.post('/',middlewareLogueado, loginController.checkUser)
+router.get('/login',middlewareLogueado, loginController.log);
+router.post('/login',middlewareLogueado, loginController.checkUser)
 
 
 module.exports = router;

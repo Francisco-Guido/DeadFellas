@@ -1,4 +1,5 @@
 const db = require ('../database/models/');
+const bcrypt = require ('bcryptjs');
 
 module.exports = {
         create: function (req, res) {
@@ -8,7 +9,7 @@ module.exports = {
                 name: req.body.name,
                 surname: req.body.surname,
                 email: req.body.email,
-                password: req.body.password,
+                password: bcrypt.hashSync(req.body.password),
                 repassword: req.body.repassword,
             }, {
                 timestamps: false
