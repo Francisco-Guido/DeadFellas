@@ -9,7 +9,7 @@ module.exports = {
      })
 },
 
-delete: function (req, res) {
+ delete: function (req, res) {
     db.Product.destroy ({
         where: {
             id: req.params.id
@@ -20,6 +20,6 @@ delete: function (req, res) {
     })
     .catch(function(e){
         res.send(e)
-    })
+    }) 
 }
 }

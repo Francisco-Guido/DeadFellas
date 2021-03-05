@@ -3,8 +3,9 @@ const router = express.Router();
 const updateController = require('../controllers/updateController');
 
 
-router.get('/', updateController.update);
-router.delete('delete:id', updateController.delete);
+router.get('/updateProduct', updateController.update);
+
+router.delete('/delete/:id', updateController.delete);
 
 
 

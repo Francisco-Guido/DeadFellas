@@ -14,8 +14,8 @@
             <h2><%= vistaAdmin[i].name %> </h2>
             <p> <%= vistaAdmin[i].price %> </p>
             <div class="edit">
-                <form method="POST" action="/delete/<%= vistaAdmin[i].id %>?_method=delete">
-                    <button type="submit" value="borrar"></button>
+                <form action="/delete/<%= vistaAdmin[i].id %>/?_method=DELETE" method="POST">
+                    <button type="submit" value="borrar">BORRAR</button>
                 </form>
             </div>
         </div>

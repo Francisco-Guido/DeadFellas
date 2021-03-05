@@ -32,7 +32,7 @@ app.use('/productsCart', productsCartRouter);
 app.use('/login', loginRouter);
 app.use('/register', registerRouter);
 app.use('/createProduct', createProductRouter);
-app.use('/updateProduct', updateRouter);
+app.use('/', updateRouter);
 
 
 app.listen(3000, function(){
