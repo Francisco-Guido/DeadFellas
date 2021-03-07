@@ -6,6 +6,7 @@ module.exports = {
 
             res.send (req.body)
             db.User.create ({
+                rol: 1,
                 name: req.body.name,
                 surname: req.body.surname,
                 email: req.body.email,

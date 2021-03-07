@@ -22,8 +22,9 @@ const productsDetailRouter = require('./routers/productsDetailRouter');
 const productsCartRouter = require('./routers/productsCartRouter');
 const loginRouter = require('./routers/loginRouter')
 const registerRouter = require('./routers/registerRouter');
-const createProductRouter = require('./routers/createProductRouter')
-const updateRouter = require('./routers/updateRouter')
+const createProductRouter = require('./routers/createProductRouter');
+const updateRouter = require('./routers/updateRouter');
+const updateUserRouter = require('./routers/updateUserRouter');
 
 app.use('/products', productsRouter);
 app.use('/', generalRouter);
@@ -33,6 +34,7 @@ app.use('/', loginRouter);
 app.use('/register', registerRouter);
 app.use('/createProduct', createProductRouter);
 app.use('/', updateRouter);
+app.use('/', updateUserRouter);
 
 
 app.listen(3000, function(){

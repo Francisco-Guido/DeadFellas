@@ -2,6 +2,9 @@ module.exports = function(sequelize, dataTypes){
     const alias = "User"
     const cols = {
 
+        rol:{
+            type:dataTypes.INTEGER,
+        },
         id: {
             type: dataTypes.INTEGER.UNSIGNED,
             autoIncrement: true, 
