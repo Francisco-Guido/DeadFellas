@@ -4,7 +4,6 @@ const bcrypt = require ('bcryptjs');
 module.exports = {
         create: function (req, res) {
 
-            res.send (req.body)
             db.User.create ({
                 rol: 1,
                 name: req.body.name,
@@ -14,6 +13,13 @@ module.exports = {
                 repassword: req.body.repassword,
             }, {
                 timestamps: false
+            })
+            .then(function(usuario){
+                req.session.usuarioLogueado = usuario.id;
+                return res.redirect('/')
+            })
+            .catch(function(e){
+                res.send(e)
             })
             },
         register: function (req, res) {
