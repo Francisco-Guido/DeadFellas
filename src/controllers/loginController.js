@@ -23,7 +23,13 @@ module.exports = {
                 return res.send("Los datos ingresados son incorrectos")
             }
             })
-}
+},
+    logout: function (req,res) {
+        req.session.destroy();
+        res.redirect('/');
+        // res.send('kkkk')
+    
+    }
 }
 
 /* checkUser: function(req,res){
