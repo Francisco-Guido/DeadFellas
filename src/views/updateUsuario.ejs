@@ -4,24 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Modificar información</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Editar Informacion</h1>
-    <form action="/updateUsuario/<%=update.id%>/?_method=PUT" method="POST">
-        <div>
+    <form class="formularios-user" action="/updateUsuario/<%=update.id%>/?_method=PUT" method="POST">
+        <div class="container-login">
+        <h1>¡Modificá tu información!</h1>
+    
+    
+        <div class="div-userMod">
             <label for="">Nombre</label>
-            <input type="text" name="name" value="<%= update.name%>">
+            <input class="input-userMod" type="text" name="name" value="<%= update.name%>">
         </div>
-        <div>
+        <div class="div-userMod">
             <label for="message">Apellido</label>
-            <input type="text" name="surname" value="<%= update.surname%>">
+            <input class="input-userMod" type="text" name="surname" value="<%= update.surname%>">
         </div>
-        <div>
+        <div class="div-userMod">
             <label for="message">Email</label>
-            <input type="email" name="email" value="<%= update.email%>">
+            <input class="input-userMod" type="email" name="email" value=" <%= update.email%>">
         </div>
-        <button type="submit">Editar</button>
+        <div class="div-userMod">
+        <button class = "button-user" type="submit">Confirmar</button>
+        </div>
+    </div>
     </form>
+
 </body>
 </html>

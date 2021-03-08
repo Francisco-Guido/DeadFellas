@@ -1135,3 +1135,55 @@ width: 0.1px;
         margin-top: 20px;
     }
 }
+
+/* Formulario para modificar usuario */
+
+.input-userMod {
+    padding:7px;
+    width: 300px;
+    border-radius: 25px;
+    font-family: Poppins;
+}
+
+.button-user{
+    padding:7px;
+    width: 300px;
+    border-radius: 25px;
+    background-color: #000;
+    color: #fff;
+    border:2px solid rgb(202, 202, 202);
+    border-radius: 15px;
+    font-family: Poppins;
+}
+
+.formularios-user{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height:500px;
+    width: 100%;
+    
+}
+
+.div-userMod{
+    width: 15%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+}
+
+.container-login{
+    height:100%;
+    width: 50%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: gray;
+    border-radius: 15px;
+    margin: 1000px;
+}
+
