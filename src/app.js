@@ -4,6 +4,7 @@ const path = require("path");
 const middlewareEsUsuario = require('./middlewares/esUsuario');
 var session = require('express-session');
 const methodOverride = require('method-override');
+const {check, validationResult, body} = require('express-validator');
 
 app.set ('view engine', 'ejs')
 app.set('views', path.join(__dirname, './views'));
@@ -31,7 +32,7 @@ app.use('/', generalRouter);
 app.use('/productsDetail', productsDetailRouter);
 app.use('/productsCart', productsCartRouter);
 app.use('/', loginRouter);
-app.use('/register', registerRouter);
+app.use('/', registerRouter);
 app.use('/createProduct', createProductRouter);
 app.use('/', updateRouter);
 app.use('/', updateUserRouter);

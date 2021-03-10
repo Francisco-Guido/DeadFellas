@@ -30,29 +30,27 @@
             </p>
         </div>
 
-        <form class="principal-register" action="/register/created" method="POST">  
+        <form class="principal-register" action="/register" method="POST">  
          <div class="register_">
             <input type="text" id="Nombre" placeholder="Nombre" class ="places-" name="name">
         </div>
         <div class="register_">
-            <input type="text" id="Nombree" placeholder="Nombre" class ="places-" name="surname">
+            <input type="text" id="Nombree" placeholder="Nombre" id="exampleInputEmail1" class ="places-" name="surname">
         </div>
         <div class="register_">
             <input type="email" id="email" placeholder="Email" class ="places-" name="email">
+            <small style="color: red">
+                <%= (typeof errors != 'undefined' && errors.email) ? errors.email.msg : '' %>
+            </small>
         </div>
         <div class="register_">
-            <input type="password" id="password" placeholder="Contraseña" class ="places-" name="password">
+            <input type="password" id="password" placeholder="Contraseña" class ="places-" name="password" id="exampleInputPassword1">            
+            <small style="color: red">
+                <%= (typeof errors != 'undefined' && errors.password) ? errors.password.msg : '' %>
+              </small>
         </div>
         <div class="register_">
             <input type="password" id="repassword" placeholder="Contraseña" class ="places-" name="repassword">
-        </div>
-
-        <!-- <div class="register_">
-            <label for="exampleFormControlFile1" class="upavatar">Subí tu avatar!</label>
-            <input type="file" class="form-control-file" id="exampleFormControlFile1" name="avatar">
-        </div>  -->
-        <div class = "register_2">
-
         </div>
 
         <button type="submit">Registrate</button>

@@ -1,15 +1,18 @@
 const db = require ('../database/models/');
 const bcrypt = require ('bcryptjs');
+const { validationResult } = require('express-validator');
 
 module.exports = {
         create: function (req, res) {
 
+            let errors = validationResult(req);
+            if(errors.isEmpty()){
             db.User.create ({
                 rol: 1,
                 name: req.body.name,
                 surname: req.body.surname,
                 email: req.body.email,
-                password: bcrypt.hashSync(req.body.password),
+                password: bcrypt.hashSync(req.body.password, 12),
                 repassword: req.body.repassword,
             }, {
                 timestamps: false
@@ -21,7 +24,12 @@ module.exports = {
             .catch(function(e){
                 res.send(e)
             })
-            },
+            } else {
+                res.render('register', {
+                    errors: errors.mapped(),
+                    old: req.body
+            })
+            }},
         register: function (req, res) {
                     res.render ('register')
                 },

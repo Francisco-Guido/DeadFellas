@@ -1,5 +1,6 @@
 const db = require ('../database/models/');
 
+
 module.exports = {
     update: function (req, res) {
         db.User.findByPk (req.session.usuarioLogueado)
