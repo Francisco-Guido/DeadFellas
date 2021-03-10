@@ -51,6 +51,9 @@
         </div>
         <div class="register_">
             <input type="password" id="repassword" placeholder="Contraseña" class ="places-" name="repassword">
+            <small style="color: red">
+                <%= (typeof errors != 'undefined' && errors.repassword) ? errors.repassword.msg : '' %>
+              </small>
         </div>
 
         <button type="submit">Registrate</button>

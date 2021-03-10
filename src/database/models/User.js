@@ -29,10 +29,6 @@ module.exports = function(sequelize, dataTypes){
             allowNull: false,
 
         },
-        repassword: {
-            type: dataTypes.STRING(225),
-            alowNull: true,
-        },
         created_at: {
             type: dataTypes.DATE,
             alowNull: true,
