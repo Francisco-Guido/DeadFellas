@@ -20,7 +20,11 @@
         
             <form class="formularios-login" method="POST" action="">
                 <input type="email" class="form-input-login" id="txtEmail" placeholder="Ingresá tu Email" name="email"/>
+                <small style="color: red">
+                    <%= (typeof errorsLogin != 'undefined' && errorsLogin.email) ? errorsLogin.email.msg : '' %>
+                </small>
                 <input type="password" class="form-input-login" id="txtPassword" placeholder="Contraseña" name="password"/>
+                
                 <div class="passw-container-login">
                     <a href="#" class ="contra-login">¿Olvidaste tu contraseña?</a>
                 </div>
@@ -38,6 +42,7 @@
             
         </section>
     
+
 </body>
 
 </html>

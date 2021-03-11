@@ -2,17 +2,21 @@ const db = require ('../database/models/');
 
 module.exports = {
     enviandoProduct: function(req,res){
-
-        res.send (req.body)
         db.Product.create ({
             name: req.body.name,
             description: req.body.description,
             price: req.body.price,
             quantity: req.body.quantity,
-            // collection_id: req.body.collection_id
-        }, {
-
+            images: req.files[0].filename
+        },{
+            timestamps: false
         })
+        .then(function(productos){
+            productos=productos
+            return res.redirect('/updateProduct')
+        }), {
+
+        }
         
 },
     createProduct: function(req,res){

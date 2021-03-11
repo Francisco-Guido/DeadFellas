@@ -12,6 +12,7 @@ module.exports = {
                     surname: req.body.surname,
                     email: req.body.email,
                     password: bcrypt.hashSync(req.body.password, 12),
+                    avatar: req.files[0].filename
                 }, {
                     timestamps: false
                 })

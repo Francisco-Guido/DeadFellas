@@ -2,13 +2,16 @@ const fs = require("fs");
 const path = require("path");
 const bcrypt=require("bcryptjs");
 const db = require ('../database/models/');
-/* const { send } = require("process"); */
+const { validationResult } = require('express-validator');
+
 
 module.exports = {
     log: function(req,res){
     res.render('login');
 },
     checkUser: function(req,res){
+        let errorsLogin = validationResult(req);
+            if(errorsLogin.isEmpty()){
         db.User.findOne ({
             where: {
                 email: req.body.email
@@ -20,31 +23,15 @@ module.exports = {
                 return res.redirect('/')
             }
             else {
-                return res.send("Los datos ingresados son incorrectos")
+                res.send("Holaaaaaaaa")
+                /* res.render('login', {
+                    errorsLogin: errorsLogin.mapped(),
+                }) */
             }
             })
-},
+}},
     logout: function (req,res) {
         req.session.destroy();
         res.redirect('/');
-        // res.send('kkkk')
-    
     }
 }
-
-/* checkUser: function(req,res){
-    for(let i = 0; i <usuarios.length; i++){
-        if(usuarios[i].email == req.body.email){
-            if(bcrypt.compareSync(req.body.password, usuarios[i].password)){
-                req.session.usuarioLogueado = true;
-                return res.redirect('/')
-            } else {
-                return res.send("Los datos ingresados son incorrectos")
-            }
-            
-        }
-    }
-    return res.send("Usuario no registrado")
-} */
-
-

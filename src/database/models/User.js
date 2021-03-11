@@ -29,6 +29,11 @@ module.exports = function(sequelize, dataTypes){
             allowNull: false,
 
         },
+        avatar: {
+            type: dataTypes.STRING(100),
+            allowNull: false,
+
+        },
         created_at: {
             type: dataTypes.DATE,
             alowNull: true,

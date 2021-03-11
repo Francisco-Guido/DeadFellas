@@ -23,6 +23,10 @@ module.exports = function(sequelize, dataTypes){
             type: dataTypes.INTEGER(10)
 
         },
+        images: {
+            type: dataTypes.INTEGER(100)
+
+        },
 /*         photo1: {
             type: dataTypes.STRING(100)
         },
