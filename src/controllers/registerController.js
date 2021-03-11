@@ -11,7 +11,7 @@ module.exports = {
                     name: req.body.name,
                     surname: req.body.surname,
                     email: req.body.email,
-                    password: bcrypt.hashSync(req.body.password, 12)
+                    password: bcrypt.hashSync(req.body.password, 12),
                 }, {
                     timestamps: false
                 })

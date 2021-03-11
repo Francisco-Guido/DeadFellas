@@ -2,7 +2,8 @@ const express = require('express');
 const router = express.Router();
 const multer = require('multer');
 const bcrypt=require("bcryptjs");
-const path=require("path")
+const path=require("path");
+
 
 const registerController = require('../controllers/registerController');
 

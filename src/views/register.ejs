@@ -32,10 +32,16 @@
 
         <form class="principal-register" action="/register" method="POST">  
          <div class="register_">
-            <input type="text" id="Nombre" placeholder="Nombre" class ="places-" name="name">
+            <input type="text" id="name" placeholder="Nombre" class ="places-" name="name">
+            <small style="color: red">
+                <%= (typeof errors != 'undefined' && errors.name) ? errors.name.msg : '' %>
+            </small>
         </div>
         <div class="register_">
-            <input type="text" id="Nombree" placeholder="Nombre" id="exampleInputEmail1" class ="places-" name="surname">
+            <input type="text" id="surname" placeholder="Apellido" id="exampleInputEmail1" class ="places-" name="surname">
+            <small style="color: red">
+                <%= (typeof errors != 'undefined' && errors.surname) ? errors.surname.msg : '' %>
+            </small>
         </div>
         <div class="register_">
             <input type="email" id="email" placeholder="Email" class ="places-" name="email">

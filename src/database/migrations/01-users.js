@@ -28,10 +28,10 @@ module.exports = {
         type: Sequelize.DataTypes.STRING(225),
         allowNull: false
       },
-      repassword:{ 
-          type: Sequelize.DataTypes.STRING(225),
-      alowNull: true,
-      },        
+      images: {
+        type: Sequelize.DataTypes.STRING(100),
+        allowNull: false,
+      },
       created_at: {
           type: Sequelize.DataTypes.DATE,
           alowNull: true,
