@@ -30,7 +30,7 @@
             </p>
         </div>
 
-        <form class="principal-register" action="/register" method="POST" enctype="multipart/form-data">  
+        <form class="principal-register" action="/register" method="POST" onsubmit="return functionValidation();" enctype="multipart/form-data" id="myForm">  
          <div class="register_">
             <input type="text" id="name" placeholder="Nombre" class ="places-" name="name">
             <small id = "small"></small>
@@ -40,6 +40,7 @@
         </div>
         <div class="register_">
             <input type="text" id="surname" placeholder="Apellido" id="exampleInputEmail1" class ="places-" name="surname">
+            <small id = "small2"></small>
             <small style="color: red">
                 <%= (typeof errors != 'undefined' && errors.surname) ? errors.surname.msg : '' %>
             </small>
@@ -72,15 +73,22 @@
     </main>
     
     <script type="text/javascript">
-        document.getElementById("myBtn").addEventListener("click", myFunction);
-
-        function myFunction() {
-            if(document.getElementById("name").value == ""){
-                document.getElementById("small").innerHTML += "Ingresa ya el nombre"
-            }
+        
+        
+        function functionValidation() {
+            let valor = document.getElementById("name").value;
+            
+            if(valor == "" || valor == undefined){
+                document.getElementById("small").innerHTML = "Este campo es obligatorio";
+                return false;
+            } 
+    
+            return true;
         }
 
-    
+        
+
+
         
     
     </script>

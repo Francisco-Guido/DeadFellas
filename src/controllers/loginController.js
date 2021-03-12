@@ -10,8 +10,6 @@ module.exports = {
     res.render('login');
 },
     checkUser: function(req,res){
-        let errorsLogin = validationResult(req);
-            if(errorsLogin.isEmpty()){
         db.User.findOne ({
             where: {
                 email: req.body.email
@@ -23,13 +21,10 @@ module.exports = {
                 return res.redirect('/')
             }
             else {
-                res.send("Holaaaaaaaa")
-                /* res.render('login', {
-                    errorsLogin: errorsLogin.mapped(),
-                }) */
+                 res.send("error")
             }
             })
-}},
+},
     logout: function (req,res) {
         req.session.destroy();
         res.redirect('/');
