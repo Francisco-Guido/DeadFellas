@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Editar producto</title>
 </head>
 <body>
     
-    <h1>Editar un Producto</h1>
-            <form action="/detail/<%= detail.id %>/?_method=PUT" method="POST">
+    
+            <form action="/detail/<%= detail.id %>/?_method=PUT" method="POST" class="formCreate">
+                <h1>Editar un Producto</h1>
                 <div>
                     <label for="">Producto</label>
                     <input type="text" name="name" value="<%= detail.name%>">
@@ -18,7 +20,7 @@
                     <label for="message">Precio</label>
                     <input type="text" name="price" value="<%= detail.price%>">
                 </div>
-                <button type="submit">Editar</button>
+                <button type="submit" class="button">Editar</button>
             </form>
     
 

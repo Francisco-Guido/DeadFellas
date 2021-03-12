@@ -5,24 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Products</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     
 
-    <% for (let i= 0; i < vistaAdmin.length; i++){ %>
-        <div class= "note">
-            <h2><%= vistaAdmin[i].name %> </h2>
-            <p> <%= vistaAdmin[i].price %> </p>
-            <img src="images/productos/<%=vistaAdmin[i].images%>">
+<div class="update1">
 
-            <div class="edit">
-                <a href="/detail/<%= vistaAdmin[i].id %> ">EDITAR</i></a>
+    <% for (let i= 0; i < vistaAdmin.length; i++){ %>
+            <div class="update2">
+            <img src="images/productos/<%=vistaAdmin[i].images%>" class="imageupdate">
+            <h2><%= vistaAdmin[i].name %> </h2>
+            <p> Precio: <%= vistaAdmin[i].price %> </p>
+            <a href="/detail/<%= vistaAdmin[i].id %> ">EDITAR</i></a>
                 <form action="/delete/<%= vistaAdmin[i].id %>/?_method=DELETE" method="POST">
-                    <button type="submit" value="borrar">BORRAR</button>
+                    <button type="submit" value="borrar" >BORRAR</button>
                 </form>
             </div>
-        </div>
+
         <% }  %> 
+
+    </div>
 
 </body>
 </html>
