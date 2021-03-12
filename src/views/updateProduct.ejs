@@ -10,9 +10,11 @@
     
 
     <% for (let i= 0; i < vistaAdmin.length; i++){ %>
-        <div class="note">
+        <div class= "note">
             <h2><%= vistaAdmin[i].name %> </h2>
             <p> <%= vistaAdmin[i].price %> </p>
+            <img src="images/productos/<%=vistaAdmin[i].images%>">
+
             <div class="edit">
                 <a href="/detail/<%= vistaAdmin[i].id %> ">EDITAR</i></a>
                 <form action="/delete/<%= vistaAdmin[i].id %>/?_method=DELETE" method="POST">

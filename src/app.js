@@ -29,7 +29,7 @@ const updateUserRouter = require('./routers/updateUserRouter');
 
 app.use('/products', productsRouter);
 app.use('/', generalRouter);
-app.use('/productsDetail', productsDetailRouter);
+app.use('/', productsDetailRouter);
 app.use('/productsCart', productsCartRouter);
 app.use('/', loginRouter);
 app.use('/', registerRouter);

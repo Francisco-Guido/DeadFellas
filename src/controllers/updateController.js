@@ -34,7 +34,7 @@ module.exports = {
 modificar: function (req, res) {
     db.Product.update ({
         name: req.body.name,
-        price: req.body.price
+        price: req.body.price,
     },{
         where: {
             id : req.params.id

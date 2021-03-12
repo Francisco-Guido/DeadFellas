@@ -46,16 +46,18 @@
         </select>
     </div>
 
-
+<div class="row">
 
     <% for (let i= 0; i < vistaProductos.length; i++){ %>
-        <div class="note">
+            <div class="col-2">
+            <img src="images/productos/<%=vistaProductos[i].images%>">
             <h2><%= vistaProductos[i].name %> </h2>
             <p> <%= vistaProductos[i].price %> </p>
-        </div>
+            </div>
+ 
         <% }  %>
  
-
+</div>
     
     <div class="page-btn">
         <span>1</span>
@@ -63,7 +65,8 @@
         <span>3</span>
         <span>&#8594;</span>
     </div>
-  </div>
+
+</div>
 
 
 <!-------- FOOTER -------->
@@ -89,3 +92,4 @@
 
 </body>
 </html>
+
