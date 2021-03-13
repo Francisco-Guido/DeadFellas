@@ -21,8 +21,16 @@ module.exports = {
         type: Sequelize.DataTypes.INTEGER(10),
       },
       images: {
-        type: Sequelize.dataTypes.INTEGER(100)
+        type: Sequelize.DataTypes.STRING(100)
       },
+      created_at: {
+        type: Sequelize.DataTypes.DATE,
+        alowNull: true,
+      },
+      updated_at: {
+        type: Sequelize.DataTypes.DATE,
+        alowNull: true,
+    }
     })
   },
 
