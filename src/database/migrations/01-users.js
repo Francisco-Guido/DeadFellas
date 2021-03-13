@@ -28,7 +28,7 @@ module.exports = {
         type: Sequelize.DataTypes.STRING(225),
         allowNull: false
       },
-      images: {
+      avatar: {
         type: Sequelize.DataTypes.STRING(100),
         allowNull: false,
       },
