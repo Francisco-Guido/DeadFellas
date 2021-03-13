@@ -2,6 +2,7 @@ const db = require ('../database/models/');
 const bcrypt = require ('bcryptjs');
 const { validationResult } = require('express-validator');
 
+
 module.exports = {
         create: function (req, res) {
             let errors = validationResult(req);
