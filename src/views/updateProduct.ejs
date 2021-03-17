@@ -17,7 +17,7 @@
             <img src="images/productos/<%=vistaAdmin[i].images%>" class="imageupdate">
             <h2><%= vistaAdmin[i].name %> </h2>
             <p> Precio: <%= vistaAdmin[i].price %> </p>
-            <a href="/detail/<%= vistaAdmin[i].id %> ">EDITAR</i></a>
+            <a href="/update/<%= vistaAdmin[i].id %> ">EDITAR</i></a>
                 <form action="/delete/<%= vistaAdmin[i].id %>/?_method=DELETE" method="POST">
                     <button type="submit" value="borrar" >BORRAR</button>
                 </form>

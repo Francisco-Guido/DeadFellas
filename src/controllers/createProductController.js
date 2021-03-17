@@ -1,7 +1,10 @@
 const db = require ('../database/models/');
+const { validationResult } = require('express-validator');
 
 module.exports = {
     enviandoProduct: function(req,res){
+        let errors = validationResult(req);
+        if(errors.isEmpty()){
         db.Product.create ({
             name: req.body.name,
             description: req.body.description,
@@ -13,10 +16,14 @@ module.exports = {
         })
         .then(function(productos){
             productos=productos
+            return res.send(errors)
             return res.redirect('/updateProduct')
-        }), {
-
-        }
+        })
+        } else {
+            res.render('create', {
+            errors: errors.mapped(),
+        })
+    }
         
 },
     createProduct: function(req,res){

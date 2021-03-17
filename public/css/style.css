@@ -70,7 +70,9 @@
 }
 
 .navbar {
+    position: relative;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     padding: 20px;
     padding-top: 60px;
@@ -507,6 +509,7 @@ input:focus {
 
 .redes i {
     margin-left: 30px;
+    margin-right: 30px;
 }
 
 .redes a {
