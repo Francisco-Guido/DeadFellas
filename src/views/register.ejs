@@ -47,12 +47,14 @@
         </div>
         <div class="register_">
             <input type="email" id="email" placeholder="Email" class ="places-" name="email">
+            <small id = "small3"></small>
             <small style="color: red">
                 <%= (typeof errors != 'undefined' && errors.email) ? errors.email.msg : '' %>
             </small>
         </div>
         <div class="register_">
             <input type="password" id="password" placeholder="Contraseña" class ="places-" name="password" id="exampleInputPassword1">            
+            <small id = "small4"></small>
             <small style="color: red">
                 <%= (typeof errors != 'undefined' && errors.password) ? errors.password.msg : '' %>
               </small>
@@ -71,17 +73,33 @@
     </main>
     
     <script type="text/javascript">
+        var name = document.getElementById("name").value;
+        var surname = document.getElementById("surname").value;
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        var repassword = document.getElementById("repassword").value;
         
         
         function functionValidation() {
-            let valor = document.getElementById("name").value;
-            
-            if(valor == "" || valor == undefined){
+            let result = true;
+
+            if(name == "" || name == undefined){
                 document.getElementById("small").innerHTML = "Este campo es obligatorio";
-                return false;
+                result = false;
             } 
-    
-            return true;
+            if(surname == "" || surname == undefined){
+                document.getElementById("small2").innerHTML = "Este campo es obligatorio";
+                result = false;
+            }
+            if(email == "" || email == undefined){
+                document.getElementById("small3").innerHTML = "Este campo es obligatorio";
+                result = false;
+            }
+            /* if(password != repassword){
+                document.getElementById("small4").innerHTML = "No coinciden";
+                result = false;
+            } */
+            return result;
         }
 
         
