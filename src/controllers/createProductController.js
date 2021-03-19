@@ -16,18 +16,16 @@ module.exports = {
         })
         .then(function(productos){
             productos=productos
-            return res.send(errors)
             return res.redirect('/updateProduct')
         })
-        } else {
-            res.render('create', {
+    } else {
+        res.render('create', {
             errors: errors.mapped(),
-        })
-    }
-        
+    })
+        }
 },
     createProduct: function(req,res){
-        res.render('create')
+        res.render('products')
     }
 }
 

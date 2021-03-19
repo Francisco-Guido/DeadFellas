@@ -9,5 +9,4 @@ module.exports = [
     .notEmpty().withMessage("Debés ingresar un precio"),
     check('quantity')
     .notEmpty().withMessage("Debés ingresar una cantidad"),
-    
 ]

@@ -8,9 +8,9 @@ router.get('/updateProduct', upload3.any(), updateController.update);
 
 router.delete('/delete/:id', updateController.delete);
 
-router.get('/update/:id', updateController.detail);
+router.get('/detail/:id', updateController.detail);
 
-router.put('/update/:id', upload3.any(), updateController.modificar);
+router.put('/detail/:id', upload3.any(), updateController.modificar);
 
 
 
