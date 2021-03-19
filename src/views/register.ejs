@@ -32,8 +32,8 @@
 
         <form class="principal-register" action="/register" method="POST" onsubmit="return functionValidation();" enctype="multipart/form-data" id="myForm">  
          <div class="register_">
-            <input type="text" id="name" placeholder="Nombre" class ="places-" name="name">
-            <small id = "small"></small>
+            <input type="text" id="namee" placeholder="Nombre" class ="places-" name="name">
+            <small id = "small1"></small>
             <small style="color: red">
                 <%= (typeof errors != 'undefined' && errors.name) ? errors.name.msg : '' %>
             </small>
@@ -73,7 +73,7 @@
     </main>
     
     <script type="text/javascript">
-        var name = document.getElementById("name").value;
+        var namee = document.getElementById("name").value;
         var surname = document.getElementById("surname").value;
         var email = document.getElementById("email").value;
         var password = document.getElementById("password").value;
@@ -83,8 +83,8 @@
         function functionValidation() {
             let result = true;
 
-            if(name == "" || name == undefined){
-                document.getElementById("small").innerHTML = "Este campo es obligatorio";
+            if(namee == "" || namee == undefined){
+                document.getElementById("small1").innerHTML = "Este campo es obligatorio";
                 result = false;
             } 
             if(surname == "" || surname == undefined){
@@ -95,22 +95,14 @@
                 document.getElementById("small3").innerHTML = "Este campo es obligatorio";
                 result = false;
             }
-            /* if(password != repassword){
-                document.getElementById("small4").innerHTML = "No coinciden";
-                result = false;
-            } */
             return result;
         }
 
-        
-
-
-        
-    
-    </script>
+        </script>
     
 </body>
 </html>
+
 
 
 

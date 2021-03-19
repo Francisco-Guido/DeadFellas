@@ -18,14 +18,15 @@
             <a title="Dead Fellas" href="http://localhost:3000/"><img src="/images/logo/lodoDef.jpg" alt="Dead Fellas" width="400"/></a>
         </article>
         
-            <form class="formularios-login" method="POST" action="">
-                <input type="email" class="form-input-login" id="txtEmail" placeholder="Ingresá tu Email" autocomplete="on" name="email"/>
+            <form class="formularios-login" method="POST" action="" onsubmit="return functionValidation();">
+                <input type="email" class="form-input-login" id="txtEmail" placeholder="Ingresá tu Email" autocomplete="on" name="email" id="email"/>
+                <small id="small3"></small>
                 <small style="color: red">
                     <%= (typeof errorsLogin != 'undefined' && errorsLogin.email) ? errorsLogin.email.msg : '' %>
                 </small>
                 <input type="password" class="form-input-login" id="txtPassword" placeholder="Contraseña" name="password"/>
                 <small style="color: red">
-                    <%= (typeof errorsLogin != 'undefined' && errorsLogin.email) ? errorsLogin.email.msg : '' %>
+                    <%= (typeof errorsLogin != 'undefined' && errorsLogin.password) ? errorsLogin.password.msg : '' %>
                 </small>
                 <div class="passw-container-login">
                     <a href="#" class ="contra-login">¿Olvidaste tu contraseña?</a>
@@ -44,7 +45,25 @@
             
         </section>
     
+        <script type="text/javascript">
+           
+            var email = document.getElementById("email").value;
+            
+            
+            
+            function functionValidation() {
+                let result = true;
+                if(email == "" || email == undefined){
+                    document.getElementById("small3").innerHTML = "Este campo es obligatorio";
+                    result = false;
+                }
+                return result;
+            }
+    
+            </script>
 
 </body>
+
+
 
 </html>

@@ -28,7 +28,8 @@ module.exports = {
                 res.render('register', {
                     errors: errors.mapped(),
             })
-            }},
+            }
+        },
         register: function (req, res) {
                     res.render ('register')
                 },

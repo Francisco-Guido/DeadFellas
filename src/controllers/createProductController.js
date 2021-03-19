@@ -3,8 +3,8 @@ const { validationResult } = require('express-validator');
 
 module.exports = {
     enviandoProduct: function(req,res){
-        let errors = validationResult(req);
-        if(errors.isEmpty()){
+        let errorsCreate = validationResult(req);
+        if(errorsCreate.isEmpty()){
         db.Product.create ({
             name: req.body.name,
             description: req.body.description,
@@ -15,19 +15,16 @@ module.exports = {
             timestamps: false
         })
         .then(function(productos){
-            productos=productos
-            return res.send(errors)
+            productos = productos
             return res.redirect('/updateProduct')
         })
-        } else {
-            res.render('create', {
-            errors: errors.mapped(),
-        })
-    }
-        
+    } else {
+        res.render('create', {
+            errorsCreate: errorsCreate.mapped(),
+    })
+        }
 },
     createProduct: function(req,res){
         res.render('create')
     }
 }
-

@@ -10,27 +10,27 @@
 <body>
     <form method="POST" enctype="multipart/form-data" class="formCreate">
         <h1>Carga de producto nuevo</h1>
-        <h3 class="h4create">Producto</h4>
-        <input type="text" name="name">
+        <h3 class="h3create">Producto</h4>
+        <input type="text" name="name" id="name">
         <small style="color: red">
-            <%= (typeof errors != 'undefined' && errors.name) ? errors.name.msg : '' %>
+            <%= (typeof errorsCreate != 'undefined' && errorsCreate.name) ? errorsCreate.name.msg : '' %>
         </small>
-        <h3 class="h4create">Descripcion</h4>
-        <input type="text" name="description">
+        <h3 class="h3create">Descripcion</h4>
+        <input type="text" name="description" id="description">
         <small style="color: red">
-            <%= (typeof errors != 'undefined' && errors.description) ? errors.description.msg : '' %>
+            <%= (typeof errorsCreate != 'undefined' && errorsCreate.description) ? errorsCreate.description.msg : '' %>
         </small>
-        <h3 class="h4create">Precio</h4>
-        <input type="text" name="price">
+        <h3 class="h3create">Precio</h4>
+        <input type="text" name="price" id="price">
         <small style="color: red">
-            <%= (typeof errors != 'undefined' && errors.price) ? errors.price.msg : '' %>
+            <%= (typeof errorsCreate != 'undefined' && errorsCreate.price) ? errorsCreate.price.msg : '' %>
         </small>
-        <h3 class="h4create">Stock</h4>
-        <input type="text" name="quantity">
+        <h3 class="h3create">Stock</h4>
+        <input type="text" name="quantity" id="quantity">
         <small style="color: red">
-            <%= (typeof errors != 'undefined' && errors.quantity) ? errors.quantity.msg : '' %>
+            <%= (typeof errorsCreate != 'undefined' && errorsCreate.quantity) ? errorsCreate.quantity.msg : '' %>
         </small>
-        <input type="file" name="images">
+        <input type="file" name="images" id="images">
         <button>Cargar producto</button>
     </form>
 </body>

@@ -6,7 +6,7 @@ const upload2= require('../middlewares/productMid')
 const productValidation = require('../validations/productsValidation');
 
 router.get('/', createProductController.createProduct);
-router.post('/', productValidation, upload2.any(), createProductController.enviandoProduct)
+router.post('/', upload2.any(), productValidation, createProductController.enviandoProduct)
 
 
 
