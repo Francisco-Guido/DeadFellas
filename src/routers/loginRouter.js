@@ -4,12 +4,12 @@ const bcrypt=require("bcryptjs");
 const path=require("path");
 const loginController = require('../controllers/loginController');
 const middlewareLogueado = require('../middlewares/logueado');
-const loginValidation = require('../validations/loginValidation');
+const loginValidation = require('../validations/loginValidation');/* aca debo eliminar esta linea? */
 
 
 router.get('/login',middlewareLogueado, loginController.log);
 
-router.post('/login', middlewareLogueado, loginController.checkUser);
+router.post('/login', middlewareLogueado,loginValidation, loginController.checkUser);/* aca debo eliminar el midelware */
 
 router.get('/logout', loginController.logout);
 

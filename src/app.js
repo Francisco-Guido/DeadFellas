@@ -6,6 +6,7 @@ var session = require('express-session');
 const methodOverride = require('method-override');
 const {check, validationResult, body} = require('express-validator');
 
+const verSesion= require("./middlewares/VerSesion")
 app.set ('view engine', 'ejs')
 app.set('views', path.join(__dirname, './views'));
 
@@ -16,6 +17,8 @@ app.use(express.urlencoded({extended:false}));
 app.use(express.json());
 app.use(middlewareEsUsuario);
 app.use(methodOverride('_method'));
+
+app.use(verSesion)
 
 const generalRouter = require('./routers/indexRouter');
 const productsRouter = require('./routers/productsRouter');
