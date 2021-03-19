@@ -11,29 +11,16 @@
     
     
             <form action="/detail/<%= detail.id %>/?_method=PUT" method="POST" class="formCreate">
-                <h1>Editar producto</h1>
-        <h3 class="h4create">Producto</h4>
-        <input type="text" name="name">
-        <small style="color: red">
-            <%= (typeof errors != 'undefined' && errors.name) ? errors.name.msg : '' %>
-        </small>
-        <h3 class="h4create">Descripcion</h4>
-        <input type="text" name="description">
-        <small style="color: red">
-            <%= (typeof errors != 'undefined' && errors.description) ? errors.description.msg : '' %>
-        </small>
-        <h3 class="h4create">Precio</h4>
-        <input type="text" name="price">
-        <small style="color: red">
-            <%= (typeof errors != 'undefined' && errors.price) ? errors.price.msg : '' %>
-        </small>
-        <h3 class="h4create">Stock</h4>
-        <input type="text" name="quantity">
-        <small style="color: red">
-            <%= (typeof errors != 'undefined' && errors.quantity) ? errors.quantity.msg : '' %>
-        </small>
-        <input type="file" name="images">
-        <button>Cargar producto</button>
+                <h1>Editar un Producto</h1>
+                <div>
+                    <label for="">Producto</label>
+                    <input type="text" name="name" value="<%= detail.name%>">
+                </div>
+                <div>
+                    <label for="message">Precio</label>
+                    <input type="text" name="price" value="<%= detail.price%>">
+                </div>
+                <button type="submit" class="button">Editar</button>
             </form>
     
 
