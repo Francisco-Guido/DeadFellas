@@ -25,6 +25,6 @@ module.exports = {
         }
 },
     createProduct: function(req,res){
-        res.render('products')
+        res.render('create')
     }
 }
