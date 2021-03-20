@@ -10,7 +10,7 @@
 <body>
     
     
-            <form action="/detail/<%= detail.id %>/?_method=PUT" method="POST" class="formCreate">
+            <form action="/detail/<%= detail.id %>/?_method=PUT" method="POST" class="formCreate" onsubmit="return functionValidation();">
                 <h1>Editar un Producto</h1>
                 <div>
                     <label for="">Producto</label>
@@ -29,6 +29,36 @@
                 <button type="submit" class="button">Editar</button>
             </form>
     
+            <script type="text/javascript">
+                var txtName = document.getElementById("name");
+                var txtPrice = document.getElementById("price");
+        
+               
+                function functionField(param){
+                    if(param.value == "" || param.value == undefined){
+                        param.parentElement.getElementsByTagName('small')[0].innerHTML = "Este campo es obligatorio";
+                        return false;
+                    } else{
+                        param.parentElement.getElementsByTagName('small')[0].innerHTML = "";
+                        return true;
+                    }
+                }
+                
+                function functionValidation() {
+                    let result = true;
+                    
+                    if(!functionField(txtName)){
+                        result = false
+                    }
+                    if(!functionField(txtPrice)){
+                        result = false 
+                    }
+                    return result;
+                }
+        
+        
+        
+            </script>
 
 </body>
 </html>
