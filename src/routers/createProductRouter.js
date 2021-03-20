@@ -9,6 +9,7 @@ const path=require("path");
 
 
 router.get('/', createProductController.createProduct);
+
 router.post('/', upload2.any(), productValidation, createProductController.enviandoProduct)
 
 

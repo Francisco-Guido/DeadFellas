@@ -34,7 +34,9 @@ module.exports = {
 },
 modificar: function (req, res) {
     let errorsEdit = validationResult(req);
-    if(errorsEdit.isEmpty()){
+        console.log("aacaaaa")
+        if(errorsEdit.isEmpty()){
+            console.log("hola")
     db.Product.update ({
         name: req.body.name,
         price: req.body.price,
@@ -47,9 +49,17 @@ modificar: function (req, res) {
         res.redirect('/updateProduct')
     })
     .catch(function(e){
-        res.send(e)
+        res.send("ESTA MAL")
     })
+    }else{
+        res.render('create', {
+            errorsEdit: errorsEdit.mapped(),
+    })
+        } 
 }
 }
-}
+
+
+
+
 

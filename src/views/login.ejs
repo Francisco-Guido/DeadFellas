@@ -19,15 +19,15 @@
         </article>
         
             <form class="formularios-login" method="POST" action="" onsubmit="return functionValidation();">
-                <input type="email" class="form-input-login" id="txtEmail" placeholder="Ingresá tu Email" autocomplete="on" name="email" id="email"/>
-                <small id="small3"></small>
-                <small style="color: red">
-                    <%= (typeof errorsLogin != 'undefined' && errorsLogin.email) ? errorsLogin.email.msg : '' %>
-                </small>
-                <input type="password" class="form-input-login" id="txtPassword" placeholder="Contraseña" name="password"/>
-                <small style="color: red">
-                    <%= (typeof errorsLogin != 'undefined' && errorsLogin.password) ? errorsLogin.password.msg : '' %>
-                </small>
+                <div class="register_">
+                    <input type="email" id="email" placeholder="Email" class ="places-" name="email">
+                    <small style="color: red">
+                        <%= (typeof errorsLogin != 'undefined' && errorsLogin.email) ? errorsLogin.email.msg : '' %>
+                    </small>
+                </div>
+                <div class="register_">
+                    <input type="password" id="email" placeholder="Contraseña" class ="places-" name="email">
+                </div>
                 <div class="passw-container-login">
                     <a href="#" class ="contra-login">¿Olvidaste tu contraseña?</a>
                 </div>
@@ -47,23 +47,36 @@
     
         <script type="text/javascript">
            
-            var email = document.getElementById("email").value;
-            
-            
-            
-            function functionValidation() {
-                let result = true;
-                if(email == "" || email == undefined){
-                    document.getElementById("small3").innerHTML = "Este campo es obligatorio";
-                    result = false;
-                }
-                return result;
+        var txtEmail = document.getElementById("email");
+
+       
+        function functionField(param){
+            if(param.value == "" || param.value == undefined){
+                param.parentElement.getElementsByTagName('small')[0].innerHTML = "Este campo es obligatorio";
+                return false;
+            } else{
+                param.parentElement.getElementsByTagName('small')[0].innerHTML = "";
+                return true;
             }
+        }
+        
+        function functionValidation() {
+            let result = true;
+            
+            if(!functionField(txtEmail)){
+                result = false
+            }
+
+
+            return result;
+        }
+
+
+
+        </script>
     
             </script>
 
 </body>
-
-
 
 </html>
