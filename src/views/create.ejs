@@ -8,30 +8,77 @@
     <title>Carga de productos</title>
 </head>
 <body>
-    <form method="POST" enctype="multipart/form-data" class="formCreate">
+    <form method="POST" enctype="multipart/form-data" class="formCreate" onsubmit="return functionValidation();">
         <h1>Carga de producto nuevo</h1>
         <h3 class="h3create">Producto</h4>
+        <div class="ingenioso">
         <input type="text" name="name" id="name">
         <small style="color: red">
             <%= (typeof errorsCreate != 'undefined' && errorsCreate.name) ? errorsCreate.name.msg : '' %>
         </small>
+        </div>
         <h3 class="h3create">Descripcion</h4>
+        <div class="ingenioso">
         <input type="text" name="description" id="description">
         <small style="color: red">
             <%= (typeof errorsCreate != 'undefined' && errorsCreate.description) ? errorsCreate.description.msg : '' %>
         </small>
+        </div>
         <h3 class="h3create">Precio</h4>
+        <div class="ingenioso">
         <input type="text" name="price" id="price">
         <small style="color: red">
             <%= (typeof errorsCreate != 'undefined' && errorsCreate.price) ? errorsCreate.price.msg : '' %>
         </small>
+        </div>
         <h3 class="h3create">Stock</h4>
+        <div class="ingenioso">
         <input type="text" name="quantity" id="quantity">
         <small style="color: red">
             <%= (typeof errorsCreate != 'undefined' && errorsCreate.quantity) ? errorsCreate.quantity.msg : '' %>
         </small>
+        </div>
         <input type="file" name="images" id="images">
         <button>Cargar producto</button>
     </form>
+
+    <script type="text/javascript">
+        var txtName = document.getElementById("name");
+        var txtDesc = document.getElementById("description");
+        var txtPrice = document.getElementById("price");
+        var txtQuant = document.getElementById("quantity");
+
+       
+        function functionField(param){
+            if(param.value == "" || param.value == undefined){
+                param.parentElement.getElementsByTagName('small')[0].innerHTML = "Este campo es obligatorio";
+                return false;
+            } else{
+                param.parentElement.getElementsByTagName('small')[0].innerHTML = "";
+                return true;
+            }
+        }
+        
+        function functionValidation() {
+            let result = true;
+            
+            if(!functionField(txtName)){
+                result = false
+            }
+            if(!functionField(txtDesc)){
+                result = false 
+            }
+            if(!functionField(txtPrice)){
+                result = false 
+            }
+            if(!functionField(txtQuant)){
+                result = false 
+            }
+            return result;
+        }
+
+
+
+    </script>
 </body>
 </html>
