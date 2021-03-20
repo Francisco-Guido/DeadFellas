@@ -1,4 +1,5 @@
 const db = require ('../database/models/');
+const { validationResult } = require('express-validator');
 
 module.exports = {
     detail: function (req, res) {
@@ -32,6 +33,8 @@ module.exports = {
     }) 
 },
 modificar: function (req, res) {
+    let errorsEdit = validationResult(req);
+    if(errorsEdit.isEmpty()){
     db.Product.update ({
         name: req.body.name,
         price: req.body.price,
@@ -46,6 +49,7 @@ modificar: function (req, res) {
     .catch(function(e){
         res.send(e)
     })
+}
 }
 }
 

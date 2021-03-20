@@ -14,11 +14,17 @@
                 <h1>Editar un Producto</h1>
                 <div>
                     <label for="">Producto</label>
-                    <input type="text" name="name" value="<%= detail.name%>">
+                    <input type="text" name="name" id="name" value="<%= detail.name%>">
+                    <small style="color: red">
+                        <%= (typeof errorsEdit != 'undefined' && errorsEdit.name) ? errorsEdit.name.msg : '' %>
+                    </small>
                 </div>
                 <div>
                     <label for="message">Precio</label>
-                    <input type="text" name="price" value="<%= detail.price%>">
+                    <input type="text" name="price" id="price" value="<%= detail.price%>">
+                    <small style="color: red">
+                        <%= (typeof errorsEdit != 'undefined' && errorsEdit.price) ? errorsEdit.price.msg : '' %>
+                    </small>
                 </div>
                 <button type="submit" class="button">Editar</button>
             </form>
