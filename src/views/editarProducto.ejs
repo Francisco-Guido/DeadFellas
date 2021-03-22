@@ -16,7 +16,14 @@
                     <label for="">Producto</label>
                     <input type="text" name="name" id="name" value="<%= detail.name%>">
                     <small style="color: red">
-                        <%= (typeof errorsEdit != 'undefined' && errorsEdit.quantity) ? errorsEdit.quantity.msg : '' %>
+                        <%= (typeof errorsEdit != 'undefined' && errorsEdit.name) ? errorsEdit.name.msg : '' %>
+                    </small>
+                </div>
+                <div>
+                    <label for="">Descripcion</label>
+                    <input type="text" name="description" id="description" value="<%= detail.description%>">
+                    <small style="color: red">
+                        <%= (typeof errorsEdit != 'undefined' && errorsEdit.description) ? errorsEdit.description.msg : '' %>
                     </small>
                 </div>
                 <div>
@@ -24,6 +31,13 @@
                     <input type="text" name="price" id="price" value="<%= detail.price%>">
                     <small style="color: red">
                         <%= (typeof errorsEdit != 'undefined' && errorsEdit.price) ? errorsEdit.price.msg : '' %>
+                    </small>
+                </div>
+                <div>
+                    <label for="">Cantidad</label>
+                    <input type="text" name="quantity" id="quantity" value="<%= detail.quantity%>">
+                    <small style="color: red">
+                        <%= (typeof errorsEdit != 'undefined' && errorsEdit.quantity) ? errorsEdit.quantity.msg : '' %>
                     </small>
                 </div>
                 <button type="submit" class="button">Editar</button>

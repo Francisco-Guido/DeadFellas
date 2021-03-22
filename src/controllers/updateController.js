@@ -1,5 +1,6 @@
 const db = require ('../database/models/');
 const { validationResult } = require('express-validator');
+const { array } = require('../middlewares/productMid');
 
 module.exports = {
     detail: function (req, res) {
@@ -34,9 +35,7 @@ module.exports = {
 },
 modificar: function (req, res) {
     let errorsEdit = validationResult(req);
-        console.log("aacaaaa")
-        if(errorsEdit.isEmpty()){
-            console.log("hola")
+    if(errorsEdit.isEmpty()){
     db.Product.update ({
         name: req.body.name,
         price: req.body.price,
@@ -49,13 +48,20 @@ modificar: function (req, res) {
         res.redirect('/updateProduct')
     })
     .catch(function(e){
-        res.send("ESTA MAL")
+        res.send(e)
     })
     }else{
-        res.render('create', {
-            errorsEdit: errorsEdit.mapped(),
-    })
+        db.Product.findByPk (req.params.id)
+        .then(function(detail){
+            res.render('editarProducto', {
+                errorsEdit: errorsEdit.mapped(), detail:detail
+            })
+        })
+        .catch(function(e){
+            res.send(e)
+        })
         } 
+    
 }
 }
 
