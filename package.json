@@ -4,8 +4,7 @@
   "description": "*El target de la marca se enfoca en un público joven, entre los 18 y 35 años de edad y que se identifiquen con la marca.🤘*\r ### A continuación les dejamos los links de las páginas que hemos usado como referencia: \r * [AY NOT DEAD](http:/www.aynotdead.com)\r * [H&M](https://www2.hm.com/es_us/hombre/productos/camisetas-con-sin-mangas.html)\r * [RATIO](https://ratiocoffee.com/)\r * [APPLE](https://www.apple.com/la/)\r * [The Soap Co](https://thesoapco.org/)",
   "main": "src/app.js",
   "engines": {
-    "node": "13.6.0",
-    "npm": "6.13.4"
+    "node": "12.0.x"
   },
   "scripts": {
     "start": "node ./app.js",
