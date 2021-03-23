@@ -38,9 +38,9 @@ app.use('/createProduct', createProductRouter);
 app.use('/', updateRouter);
 app.use('/', updateUserRouter);
 
-
+/*
 app.listen(80, function(){
     console.log("Escuchando servidor 3000")
-});
+});*/
 
 
