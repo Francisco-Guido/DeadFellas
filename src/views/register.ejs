@@ -64,6 +64,9 @@
         </div>
         <input type="file" name="avatar">
         <button type="submit" id = "myBtn">Registrate</button>
+        <small style="color: red">
+            <%= (typeof errors != 'undefined' && errors.repassword) ? errors.repassword.msg : '' %>
+          </small>
         </form>
             
     </section>
