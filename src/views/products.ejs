@@ -48,9 +48,10 @@
 
 <div class="row">
 
+
     <% for (let i= 0; i < vistaProductos.length; i++){ %>
             <div class="col-2">
-            <img src="images/productos/<%=vistaProductos[i].images%>">
+                <a href="/Detalle/<%= vistaProductos[i].id %> "><img src="images/productos/<%=vistaProductos[i].images%>"></a>
             <h2><%= vistaProductos[i].name %> </h2>
             <p> <%= vistaProductos[i].price %> </p>
             </div>
