@@ -1269,3 +1269,17 @@ width: 0.1px;
         bottom: 100px;
     }
 }
+
+.btnRegister{
+    padding:5px;
+    width: 35%;
+    border-radius: 25px;
+    background-color: #000;
+    color: #fff;
+    border:2px solid rgb(202, 202, 202);
+    border-radius: 15px;
+    position: relative;
+    top: 2%;
+    font-family: Poppins;
+}
+

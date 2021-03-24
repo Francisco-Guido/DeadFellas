@@ -1,9 +1,9 @@
 module.exports = {
-  "development": {
-    "username": "root",
-    "password": null,
-    "database": "deadfellas_db",
-    "host": "127.0.0.1",
+  "production": {
+    "username": "frandh",
+    "password": "DH2020!",
+    "database": "frandh_deadfellas",
+    "host": "mysql-frandh.alwaysdata.net",
     "dialect": "mysql",
     "port": "3306"
   },
@@ -14,7 +14,7 @@ module.exports = {
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
-  "production": {
+  "development": {
     "username": "root",
     "password": null,
     "database": "database_production",
