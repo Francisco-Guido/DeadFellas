@@ -6,6 +6,8 @@ var session = require('express-session');
 const methodOverride = require('method-override');
 const {check, validationResult, body} = require('express-validator');
 
+//let port = process.env.PORT || 3000;
+
 app.set ('view engine', 'ejs')
 app.set('views', path.join(__dirname, './views'));
 
@@ -39,11 +41,8 @@ app.use('/', updateRouter);
 app.use('/', updateUserRouter);
 
 const PORT = process.env.PORT || '8080'
-app.set("port", PORT);
+app.set("port", PORT); 
 
-/*
-app.listen(80, function(){
-    console.log("Escuchando servidor 3000")
-});*/
+app.listen(PORT, () => console.log('Server listening to port : ${PORT}'))
 
 
