@@ -38,6 +38,9 @@ app.use('/createProduct', createProductRouter);
 app.use('/', updateRouter);
 app.use('/', updateUserRouter);
 
+const PORT = process.env.PORT || '8080'
+app.set("port", PORT);
+
 /*
 app.listen(80, function(){
     console.log("Escuchando servidor 3000")
