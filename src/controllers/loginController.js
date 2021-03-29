@@ -4,7 +4,6 @@ const bcrypt=require("bcryptjs");
 const db = require ('../database/models/');
 const { validationResult } = require('express-validator');
 
-
 module.exports = {
     log: function(req,res){
         {
@@ -12,32 +11,26 @@ module.exports = {
         }
         },
         checkUser: function(req,res){
-            let errorsLogin = validationResult(req);
+            var errorsLogin = validationResult(req);
             if(errorsLogin.isEmpty()){
-                db.User.findOne ({
-                    where: {
-                        email: req.body.email
-                            }
-                })
-                .then (function(usuario){
-                    if(bcrypt.compareSync(req.body.password, usuario.password)){
-                        req.session.usuarioLogueado = {
-                            email:usuario.email,
-                            avatar:usuario.avatar
-                };
-                            return res.redirect('/')
-                } 
-        
+            db.User.findOne ({
+                where: {
+                    email: req.body.email
                 }
-                )}
-            
-            else {
-                res.render("login",{
-                    errorsLogin:errorsLogin.mapped(),
-                    old: req.body
-                })
-        }}
-        ,
+            })
+            .then (function(usuario){
+                if(bcrypt.compare(req.body.password, usuario.password)){
+                    req.session.usuarioLogueado = true;
+                    return res.redirect('/')
+                }
+                }
+                )
+            } else {
+                res.render('login', {
+                    errorsLogin: errorsLogin.mapped(),
+            })
+            }
+            },
             logout: function (req,res) {
             req.session.destroy();
             res.redirect('/');
