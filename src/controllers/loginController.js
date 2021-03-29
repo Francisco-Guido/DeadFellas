@@ -15,11 +15,11 @@ module.exports = {
             if(errorsLogin.isEmpty()){
             db.User.findOne ({
                 where: {
-                    email: req.body.email
+                    email: req.body.email,
                 }
             })
             .then (function(usuario){
-                if(bcrypt.compare(req.body.password, usuario.password)){
+                if(bcrypt.compareSync(req.body.password, usuario.password)){
                     req.session.usuarioLogueado = usuario.id;
                     req.session.usuarioLogueado = {
                         email:usuario.email,
