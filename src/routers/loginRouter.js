@@ -4,7 +4,7 @@ const bcrypt=require("bcryptjs");
 const path=require("path");
 const loginController = require('../controllers/loginController');
 const middlewareLogueado = require('../middlewares/logueado');
-const loginValidation = require('../validations/registerValidation');/* aca debo eliminar esta linea? */
+const loginValidation = require('../validations/loginValidation');/* aca debo eliminar esta linea? */
 
 
 router.get('/login',middlewareLogueado, loginController.log);

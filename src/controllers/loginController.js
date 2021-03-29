@@ -11,7 +11,7 @@ module.exports = {
         }
         },
         checkUser: function(req,res){
-            var errorsLogin = validationResult(req);
+            const errorsLogin = validationResult(req);
             if(errorsLogin.isEmpty()){
             db.User.findOne ({
                 where: {
@@ -20,11 +20,13 @@ module.exports = {
             })
             .then (function(usuario){
                 if(bcrypt.compare(req.body.password, usuario.password)){
-                    req.session.usuarioLogueado = true;
+                    req.session.usuarioLogueado = usuario.id;
+                    req.session.usuarioLogueado = {
+                        email:usuario.email,
+                    };
                     return res.redirect('/')
                 }
-                }
-                )
+            })
             } else {
                 res.render('login', {
                     errorsLogin: errorsLogin.mapped(),
