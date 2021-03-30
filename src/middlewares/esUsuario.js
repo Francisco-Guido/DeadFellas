@@ -3,7 +3,7 @@ function esUsuario(req, res, next) {
         console.log("------------------")
     } else {
         console.log("Okey")
-        res.locals.usuarioLogueado = true;
+        res.locals.usuarioLogueado = req.session.usuarioLogueado;
     }
     next()
 }

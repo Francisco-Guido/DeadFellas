@@ -30,6 +30,7 @@ const createProductRouter = require('./routers/createProductRouter');
 const updateRouter = require('./routers/updateRouter');
 const updateUserRouter = require('./routers/updateUserRouter');
 
+app.use('/', updateUserRouter);
 app.use('/', productsRouter);
 app.use('/', generalRouter);
 app.use('/', productsDetailRouter);
@@ -38,7 +39,7 @@ app.use('/', loginRouter);
 app.use('/', registerRouter);
 app.use('/createProduct', createProductRouter);
 app.use('/', updateRouter);
-app.use('/', updateUserRouter);
+
 
 /* const PORT = process.env.PORT || '8080'
 app.set("port", PORT);  */

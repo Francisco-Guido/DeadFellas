@@ -3,9 +3,9 @@ const router = express.Router();
 const updateUserController = require('../controllers/updateUserController');
 
 
-router.get('/modificarUsuario/:id', updateUserController.update);
+router.get('/modificarUsuario', updateUserController.update);
 
-router.put('/modificarUsuario/:id',updateUserController.modificar)
+router.put('/modificarUsuario',updateUserController.modificar)
 
 
 

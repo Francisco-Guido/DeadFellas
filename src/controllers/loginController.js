@@ -20,8 +20,8 @@ module.exports = {
             })
             .then (function(usuario){
                 if(bcrypt.compareSync(req.body.password, usuario.password)){
-                    req.session.usuarioLogueado = usuario.id;
                     req.session.usuarioLogueado = {
+                        id: usuario.id,
                         email:usuario.email,
                     };
                     return res.redirect('/')

@@ -3,7 +3,7 @@ const db = require ('../database/models/');
 
 module.exports = {
     update: function (req, res) {
-        db.User.findByPk (req.session.usuarioLogueado)
+        db.User.findByPk (req.session.usuarioLogueado.id)
         .then (function(update){
             res.render('updateUsuario', {update:update})
         })
@@ -18,7 +18,7 @@ module.exports = {
             email: req.body.email,
         },{
             where: {
-                id : req.session.usuarioLogueado
+                id : req.session.usuarioLogueado.id
             }
         })
         .then(function(data){
