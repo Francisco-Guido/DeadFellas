@@ -62,7 +62,11 @@
                 <%= (typeof errors != 'undefined' && errors.repassword) ? errors.repassword.msg : '' %>
               </small>
         </div>
-        <input type="file" name="avatar" class="btnFile">
+        <div>
+            <input type="file" name="avatar" id="avatar" class="btnFile" accept="image/jpg, image/png, image/jpeg">
+            <small style="color: red">
+              </small>
+        </div>
         <button type="submit" id = "myBtn" class = "btnRegister">Registrarme</button>
         <small style="color: red">
             <%= (typeof errors != 'undefined' && errors.repassword) ? errors.repassword.msg : '' %>
@@ -77,6 +81,7 @@
         var txtName = document.getElementById("name");
         var txtSurname = document.getElementById("surname");
         var txtEmail = document.getElementById("email");
+        var fileAvatar = document.getElementById("avatar")
 
        
         function functionField(param){
@@ -101,7 +106,9 @@
             if(!functionField(txtEmail)){
                 result = false 
             }
-
+            if(!functionField(fileAvatar)){
+                result = false 
+            }
             return result;
         }
 
