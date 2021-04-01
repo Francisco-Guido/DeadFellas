@@ -19,13 +19,24 @@ module.exports = {
                 }
             })
             .then (function(usuario){
-                if(bcrypt.compareSync(req.body.password, usuario.password)){
-                    req.session.usuarioLogueado = {
-                        id: usuario.id,
-                        email:usuario.email,
-                    };
-                    return res.redirect('/')
+                if(usuario){
+                    if(bcrypt.compareSync(req.body.password, usuario.password)){
+                        req.session.usuarioLogueado = {
+                            id: usuario.id,
+                            email:usuario.email,
+                        };
+                        return res.redirect('/')
+                    } else {
+                        res.render('login', {
+                            errorsLogin: errorsLogin.mapped(),
+                    })
+                    }
+                } else {
+                    res.render('login', {
+                        errorsLogin: errorsLogin.mapped(),
+                })
                 }
+           
             })
             } else {
                 res.render('login', {
