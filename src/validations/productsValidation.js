@@ -10,3 +10,6 @@ module.exports = [
     check('quantity')
     .notEmpty().withMessage("Debés ingresar una cantidad"),
 ]
+
+
+AAAAA
