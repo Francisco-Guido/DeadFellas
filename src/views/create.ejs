@@ -38,6 +38,15 @@
             <%= (typeof errorsCreate != 'undefined' && errorsCreate.quantity) ? errorsCreate.quantity.msg : '' %>
         </small>
         </div>
+        <h3 class="h3create">Coleccion</h4>
+            <div class="ingenioso3">
+                <select name="coleccion" type="Seleccionar coleccion">
+                    <% if (typeof coleccion != "undefined") { %> 
+                <% for(let i=0; i< coleccion.length; i++) {%> 
+                    <option value=<%=coleccion[i].id %>><%= coleccion[i].name %></option>
+                    <% } %>
+                    <% } %>
+                </div>
         <input type="file" name="images" id="images">
         <button>Cargar producto</button>
     </form>
@@ -47,6 +56,7 @@
         var txtDesc = document.getElementById("description");
         var txtPrice = document.getElementById("price");
         var txtQuant = document.getElementById("quantity");
+        var txtCollection = document.getElementById("collection")
 
        
         function functionField(param){
@@ -72,6 +82,9 @@
                 result = false 
             }
             if(!functionField(txtQuant)){
+                result = false 
+            }
+            if(!functionField(txtCollection)){
                 result = false 
             }
             return result;
