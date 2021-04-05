@@ -1231,6 +1231,15 @@ width: 0.1px;
     width: 50%
 }
 
+.h1create{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 40px;
+}
+
 @media screen and (max-width:870px){
 
     .fondo-login{
@@ -1282,3 +1291,4 @@ width: 0.1px;
 .ingenioso3 {
     width:500px
 }
+

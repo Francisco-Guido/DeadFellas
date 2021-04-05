@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    
+
+    <a href="/" class = "volver"><h2>VOLVER</h2></a>
 
 <div class="update1">
 
@@ -17,8 +18,8 @@
             <img src="images/productos/<%=vistaAdmin[i].images%>" class="imageupdate">
             <h2><%= vistaAdmin[i].name %> </h2>
             <p> Precio: <%= vistaAdmin[i].price %> </p>
-            <p>Categoria: <%= coleccion[i].name %></p>
-            <a href="/detail/<%= vistaAdmin[i].id %> ">EDITAR</i></a>
+            <p> Categoria: <%= coleccion[1].name %></p> <!-- ERROR -->
+            <a href="/detail/<%= vistaAdmin[i].id %> ">EDITAR</a>
                 <form action="/delete/<%= vistaAdmin[i].id %>/?_method=DELETE" method="POST">
                     <button type="submit" value="borrar" >BORRAR</button>
                 </form>
