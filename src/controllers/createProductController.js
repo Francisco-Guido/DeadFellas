@@ -11,7 +11,7 @@ module.exports = {
             price: req.body.price,
             quantity: req.body.quantity,
             images: req.files[0].filename,
-            collection: collection_id
+            collection_id: req.body.coleccion
         },{
             timestamps: false
         })

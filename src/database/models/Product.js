@@ -28,8 +28,7 @@ module.exports = function(sequelize, dataTypes){
 
         },
         collection_id: {
-            type: dataTypes.INTEGER(10).UNSIGNED,
-            alowNull: false
+            type: dataTypes.INTEGER(10),
         },
         created_at: {
             type: dataTypes.DATE,
@@ -52,7 +51,7 @@ module.exports = function(sequelize, dataTypes){
     
      Product.associate = function(modelos){
         Product.belongsTo(modelos.Collection, {
-        as: "Collection",
+        as: "collections",
         foreignKey: "collection_id",
      });
      } 

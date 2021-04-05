@@ -7,12 +7,10 @@ module.exports = function(sequelize, dataTypes){
             autoIncrement: true, 
             primaryKey: true,
             alowNull: false
-            
-        },
+            },
         name: {
             type: dataTypes.STRING(45),
- 
-        },
+            },
         
     }
 
@@ -25,7 +23,7 @@ module.exports = function(sequelize, dataTypes){
     const Collection = sequelize.define(alias, cols, config);
     Collection.associate = function(modelos){
         Collection.hasMany(modelos.Product, {
-        as: "Product",
+        as: "products",
         foreignKey: "collection_id",
      })
     }
