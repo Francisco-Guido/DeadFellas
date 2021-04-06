@@ -1,19 +1,22 @@
 const db = require('../../database/models')
 
 module.exports = {
-    allUsers: function(req,res){
-        db.User.findAll()
-         .then (function(usuarios){
+    allProducts: function(req,res){
+        db.Product.findAll()
+         .then (function(productos){
                  let respuesta = {
                      meta:{
                          status: 200,
-                         total: usuarios.length,
-                         url: "/api/user"
+                         total: productos.length,
+                         url: "/api/product"
                      },
-                     data: usuarios
+                     data: productos
                  }
+                 
                  res.json(respuesta);
+
              })
         }
+
     }
 

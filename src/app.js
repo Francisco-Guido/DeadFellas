@@ -30,7 +30,9 @@ const createProductRouter = require('./routers/createProductRouter');
 const updateRouter = require('./routers/updateRouter');
 const updateUserRouter = require('./routers/updateUserRouter');
 //APIS
-const apiUsersRouter = require ('./routers/api/users')
+const apiUsersRouter = require ('./routers/api/usersApiRouter');
+const apiProductsRouter = require ('./routers/api/productsApiRouter');
+const apiCollectionsRouter = require ('./routers/api/collectionsApiRouter');
 
 app.use('/', updateUserRouter);
 app.use('/', productsRouter);
@@ -41,7 +43,10 @@ app.use('/', loginRouter);
 app.use('/', registerRouter);
 app.use('/createProduct', createProductRouter);
 app.use('/', updateRouter);
-app.use('/', apiUsersRouter)
+// RUTAS APIS
+app.use('/', apiUsersRouter);
+app.use('/', apiProductsRouter);
+app.use('/', apiCollectionsRouter);
 
 
 /* const PORT = process.env.PORT || '8080'
