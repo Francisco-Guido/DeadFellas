@@ -9,14 +9,14 @@ module.exports = {
   },
   "test": {
     "username": "root",
-    "password": "root",
+    "password": null,
     "database": "deadfellas_db",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "development": {
     "username": "root",
-    "password": "root",
+    "password": null,
     "database": "deadfellas_db",
     "host": "127.0.0.1",
     "dialect": "mysql"
