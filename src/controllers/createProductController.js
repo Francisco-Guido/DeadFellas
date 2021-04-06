@@ -10,7 +10,8 @@ module.exports = {
             description: req.body.description,
             price: req.body.price,
             quantity: req.body.quantity,
-            images: req.files[0].filename
+            images: req.files[0].filename,
+            collection_id: req.body.coleccion
         },{
             timestamps: false
         })
@@ -24,7 +25,9 @@ module.exports = {
     })
         }
 },
-    createProduct: function(req,res){
-        res.render('create')
-    }
+createProduct: function (req, res) {
+    db.Collection.findAll().then(function (coleccion) {
+        return res.render("create", { coleccion })  
+})
+}
 }

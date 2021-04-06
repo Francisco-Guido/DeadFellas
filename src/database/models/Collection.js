@@ -3,27 +3,29 @@ module.exports = function(sequelize, dataTypes){
     const cols = {
 
         id: {
-            type: dataTypes.INTEGER.UNSIGNED,
+            type: dataTypes.INTEGER(10).UNSIGNED,
             autoIncrement: true, 
             primaryKey: true,
             alowNull: false
-            
-        },
+            },
         name: {
-           type: dataTypes.STRING(45),
-           allowNull:false
-
-        }
+            type: dataTypes.STRING(45),
+            },
         
     }
 
     const config = {
-            tableName: "collections",
+            tableName: "collections",   
             timestamps: true,
             underscored: true
     }
 
     const Collection = sequelize.define(alias, cols, config);
-
-    return Collection
-}
+    Collection.associate = function(modelos){
+        Collection.hasMany(modelos.Product, {
+        as: "products",
+        foreignKey: "collection_id",
+     })
+    }
+    return Collection;
+}   

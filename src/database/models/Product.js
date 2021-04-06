@@ -27,22 +27,9 @@ module.exports = function(sequelize, dataTypes){
             type: dataTypes.INTEGER(100)
 
         },
-/*         photo1: {
-            type: dataTypes.STRING(100)
+        collection_id: {
+            type: dataTypes.INTEGER(10),
         },
-        photo2: {
-            type: dataTypes.STRING(100)
-        },
-        photo3: {
-            type: dataTypes.STRING(100)
-        },
-        photo4: {
-            type: dataTypes.STRING(100),
-        }, */
-        // collection_id: {
-        //     type: dataTypes.INTEGER(10).UNSIGNED,
-        //     alowNull: false
-        // },
         created_at: {
             type: dataTypes.DATE,
             alowNull: true,
@@ -62,14 +49,11 @@ module.exports = function(sequelize, dataTypes){
 
     const Product = sequelize.define(alias, cols, config);
     
-    /* Product.associate = function(modelos){
-        Product.belongsToMany(modelos.Size, {
-     as: "sizes",
-     through: "products_sizes",
-     foreignKey: "product_id",
-     otherKey: "size_id",
-     timestamps: false
+     Product.associate = function(modelos){
+        Product.belongsTo(modelos.Collection, {
+        as: "collections",
+        foreignKey: "collection_id",
      });
-     } */
+     } 
     return Product
 }

@@ -12,13 +12,22 @@ module.exports = {
             res.send (e)
         })
     },
+    /* create: function (req, res) {
+        db.Category.findAll().then(function (category) {
+        db.Size.findAll().then(function (talle) {
+            db.Color.findAll().then(function (color) {
+                return res.render("agregarProduct", { talle, color, category })
+            })
 
+        })
+    }) */
     update: function(req,res){
     db.Product.findAll()
      .then (function(vistaAdmin){
-         res.render('updateProduct', {vistaAdmin:vistaAdmin}) 
+        db.Collection.findAll().then(function (coleccion){
+         res.render('updateProduct', {vistaAdmin, coleccion}) 
      })
-},
+})},
 
  delete: function (req, res) {
     db.Product.destroy ({
