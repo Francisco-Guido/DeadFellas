@@ -1,16 +1,16 @@
 const db = require('../../database/models')
 
 module.exports = {
-    allUsers: function(req,res){
-        db.User.findAll()
-         .then (function(usuarios){
+    allCollections: function(req,res){
+        db.Collection.findAll()
+         .then (function(colleciones){
                  let respuesta = {
                      meta:{
                          status: 200,
-                         total: usuarios.length,
-                         url: "/api/user"
+                         total: colleciones.length,
+                         url: "/api/collection"
                      },
-                     data: usuarios
+                     data: colleciones
                  }
                  res.json(respuesta);
              })

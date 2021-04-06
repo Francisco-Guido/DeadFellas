@@ -51,7 +51,7 @@ module.exports = function(sequelize, dataTypes){
     
      Product.associate = function(modelos){
         Product.belongsTo(modelos.Collection, {
-        as: "collections",
+        as: "collection",
         foreignKey: "collection_id",
      });
      } 
