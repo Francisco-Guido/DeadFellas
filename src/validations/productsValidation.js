@@ -11,6 +11,4 @@ module.exports = [
     .notEmpty().withMessage("Debés ingresar una cantidad"),
 ]
 
-
-AAAAA
-git config --global user.email johndoe@example.com
+https://github.com/FranciscoGuido-99/DeadFellas.git
