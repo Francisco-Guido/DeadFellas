@@ -10,5 +10,3 @@ module.exports = [
     check('quantity')
     .notEmpty().withMessage("Debés ingresar una cantidad"),
 ]
-
-https://github.com/FranciscoGuido-99/DeadFellas.git
