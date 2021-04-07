@@ -18,7 +18,15 @@ module.exports = {
                  res.json(respuesta);
 
              })
+        },
+
+    buscarProducto:  function(req, res){
+        db.Product.findByPk(req.params.id)
+        .then(function(product){
+            res.json(product)
         }
+        )
+    }
 
     }
 
