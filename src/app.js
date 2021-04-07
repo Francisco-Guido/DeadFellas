@@ -38,7 +38,7 @@ app.use('/', updateUserRouter);
 app.use('/', productsRouter);
 app.use('/', generalRouter);
 app.use('/', productsDetailRouter);
-app.use('/productsCart', productsCartRouter);
+app.use('/', productsCartRouter);
 app.use('/', loginRouter);
 app.use('/', registerRouter);
 app.use('/createProduct', createProductRouter);

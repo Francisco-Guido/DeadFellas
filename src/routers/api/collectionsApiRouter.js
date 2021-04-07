@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const collectionApiController= require('../../controllers/api/apiCollectionsController')
+const collectionsApiController= require('../../controllers/api/apiCollectionsController.js')
 
-router.get('/api/collection', collectionApiController.allCollections)
+router.get('/api/collections', collectionsApiController.allCollections)
 
 module.exports = router;

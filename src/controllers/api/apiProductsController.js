@@ -2,7 +2,9 @@ const db = require('../../database/models')
 
 module.exports = {
     allProducts: function(req,res){
-        db.Product.findAll()
+        db.Product.findAll({
+            attributes: ['id','name', 'price', 'quantity']
+        })
          .then (function(productos){
                  let respuesta = {
                      meta:{

@@ -35,75 +35,36 @@
 <!-------- CARRITO -------->
     
     <div class="small-container cart-page">
-        <img src="images/logo/arrow.png" width="20">
+       <a href="/products"> <img src="../images/logo/arrow.png" width="20"></a>
         <table>
             <thead>
                 <tr>
                     <th>Artículos</th>
-                    <th>Cantidad</th>
                     <th>Precio</th>
                 </tr>
             </thead>
+
+
+
+
+            
             <tbody>
                 <tr>
                     <td>
                         <div class="cart-info">
-                            <img src="images/productos/SWET.jpg" >
+                            <img src="../images/productos/<%=producto.images%>" width="10%">
                             <div>
-                                <p>SARTRE SWEATER</p>
+                                <p><%=producto.name%></p>
                                 <a href="">Remover</a>
                             </div>
-                          </div>  
+                          </div> 
     
                     </td>
     
-                    <td><input type="number" value="1"></td>
-                    <td>$8.280</td>
-                </tr>
-    
-                <tr>
-                    <td>
-                        <div class="cart-info">
-                            <img src="images/productos/gorra.jpg" >
-                            <div>
-                                <p>FESTIVAL DE CANNES CAP</p>
-                                <a href="">Remover</a>
-                            </div>
-                          </div>  
-    
-                    </td>
-    
-                    <td><input type="number" value="1"></td>
-                    <td>$2.680</td>
-                </tr>
-    
-                <tr>
-                    <td>
-                        <div class="cart-info">
-                            <img src="images/productos/remera 1.jpg" >
-                            <div>
-                                <p>PUMP UP THE VALIUM T SHIRT</p>
-                                <a href="">Remover</a>
-                            </div>
-                          </div>  
-    
-                    </td>
-    
-                    <td><input type="number" value="1"></td>
-                    <td>$3.760</td>
-                </tr>
-            
-       
-                <tr class="total-price-1">
-                    <td></td>
-                    <td>Cupon de descuento</td>
-                    <td><input type="text" id="Nombre" placeholder="" class = "cupon-1"></td>   
-                </tr>
-                <tr class="total-price-1">
-                    <td></td>
-                    <td>Descuento aplicado</td>
-                    <td>---</td>   
-                </tr>
+                    <td>$<%=producto.price%></td>
+                </tr>   
+        
+
                 <tr class="total-price-1">
                     <td></td>
                     <td>Costo de envío</td>
@@ -120,7 +81,7 @@
             
         </table>
         <br>
-        <a href="" class="finish">Finalizar compra</a>
+        <a href="/" class="finish">Finalizar compra</a>
 
 
          
