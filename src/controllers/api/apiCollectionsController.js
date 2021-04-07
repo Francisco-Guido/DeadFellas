@@ -3,14 +3,14 @@ const db = require('../../database/models')
 module.exports = {
     allCollections: function(req,res){
         db.Collection.findAll()
-         .then (function(colleciones){
+         .then (function(collections){
                  let respuesta = {
                      meta:{
                          status: 200,
-                         total: colleciones.length,
-                         url: "/api/collection"
+                         total: collections.length,
+                         url: "/api/collections"
                      },
-                     data: colleciones
+                     data: collections
                  }
                  res.json(respuesta);
              })
