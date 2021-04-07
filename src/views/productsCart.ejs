@@ -48,9 +48,10 @@
                 <tr>
                     <td>
                         <div class="cart-info">
-                            <img src="images/productos/SWET.jpg" >
+                            <!-- <img src="images/productos/SWET.jpg" > -->
+                            <img src="../images/productos/<%=vistaProductos[0].images%>" width="10%" id="productImg">
                             <div>
-                                <p>SARTRE SWEATER</p>
+                                <p><%=vistaProductos[0].name%></p>
                                 <a href="">Remover</a>
                             </div>
                           </div>  
@@ -58,13 +59,14 @@
                     </td>
     
                     <td><input type="number" value="1"></td>
-                    <td>$8.280</td>
+                    <td>$<%=vistaProductos[0].price%></td>
                 </tr>
     
                 <tr>
                     <td>
                         <div class="cart-info">
-                            <img src="images/productos/gorra.jpg" >
+                            <!-- <img src="images/productos/gorra.jpg" > -->
+                            <img src="../images/productos/<%=vistaProductos[0].images%>" width="10%" id="productImg">
                             <div>
                                 <p>FESTIVAL DE CANNES CAP</p>
                                 <a href="">Remover</a>
@@ -80,7 +82,8 @@
                 <tr>
                     <td>
                         <div class="cart-info">
-                            <img src="images/productos/remera 1.jpg" >
+                            <!-- <img src="images/productos/remera 1.jpg" > -->
+                            <img src="../images/productos/<%=vistaProductos[0].images%>" width="10%" id="productImg">
                             <div>
                                 <p>PUMP UP THE VALIUM T SHIRT</p>
                                 <a href="">Remover</a>
@@ -99,11 +102,7 @@
                     <td>Cupon de descuento</td>
                     <td><input type="text" id="Nombre" placeholder="" class = "cupon-1"></td>   
                 </tr>
-                <tr class="total-price-1">
-                    <td></td>
-                    <td>Descuento aplicado</td>
-                    <td>---</td>   
-                </tr>
+
                 <tr class="total-price-1">
                     <td></td>
                     <td>Costo de envío</td>
