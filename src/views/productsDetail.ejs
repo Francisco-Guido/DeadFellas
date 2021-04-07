@@ -54,6 +54,7 @@
               </div> -->
 
           </div>
+          <form action="/comprar/<%=detail.id %>" method="POST" enctype="multipart/form-data" class="formCreate">
           <div class="col-2 productInfo" >
               <p></p>
               <p></p>
@@ -69,13 +70,13 @@
                   <option>4</option>
                   <option>5</option>
               </select>
-              <a href="" class="btn col-7 col-md-6">Agregar al carrito</a>
+              <button>Agregar al carrito</button>
             </div>
               <h3>Descripción</h3>
               <br>
               <p><%=detail.description%></p>
-
           </div>
+        </form>
       </div>
   </div>
 

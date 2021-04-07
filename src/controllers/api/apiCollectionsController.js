@@ -2,7 +2,9 @@ const db = require('../../database/models')
 
 module.exports = {
     allCollections: function(req,res){
-        db.Collection.findAll()
+        db.Collection.findAll({
+            attributes: ['id','name']
+        })
          .then (function(collections){
                  let respuesta = {
                      meta:{
