@@ -68,7 +68,11 @@
                                 </select>
                             </div>
                             <br>
-                            <input type="file" name="images" id="images">
+                            <div>
+                            <input type="file" name="images" id="images" accept="image/jpg, image/png, image/jpeg">
+                            <small style="color: red">
+                            </small>
+                            </div>
                             <br>
                             <button class="buttonCarga">Cargar producto</button>
     </form>
@@ -78,7 +82,7 @@
         var txtDesc = document.getElementById("description");
         var txtPrice = document.getElementById("price");
         var txtQuant = document.getElementById("quantity");
-        var txtCollection = document.getElementById("collection")
+        var txtFile = document.getElementById("images")
 
 
         function functionField(param) {
@@ -105,6 +109,9 @@
             }
             if (!functionField(txtQuant)) {
                 result = false
+            }
+            if(!functionField(txtFile)){
+                result = false 
             }
 
             return result;
