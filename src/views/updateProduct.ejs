@@ -6,27 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Products</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <a href="/createProduct" class = "volver"><h2>VOLVER</h2></a>
-
 <div class="update1">
+    <div class="update10">
+        <h1 class= "h1updatem">Seleccioná una opción</h1>
+        <a href="/createProduct" class= "agregarProd">- CARGAR NUEVO PRODUCTO</a>
+        <br>
+        <a href="/" class= "agregarProd">- VOLVER A LA PAGINA PRINCIPAL</a>
+   </div>
 
     <% for (let i= 0; i < vistaAdmin.length; i++){ %>
             
             <div class="update2">
             <img src="images/productos/<%=vistaAdmin[i].images%>" class="imageupdate">
-            <h2><%= vistaAdmin[i].name %> </h2>
+            <h2 class="h2update"><%= vistaAdmin[i].name %> </h2>
             <p> Precio: <%= vistaAdmin[i].price %> </p>
+            <p> Stock: <%= vistaAdmin[i].quantity %> </p>
             <% if(vistaAdmin[i].collection_id == 1){ %>
                 <p> Categoria:  Temporada 2020 </p>
             <% }  else {  %>
                 <p> Categoria:  Temporada 2021 </p> 
              <% } %>
-            <a href="/detail/<%= vistaAdmin[i].id %> ">EDITAR</a>
+            <a href="/detail/<%= vistaAdmin[i].id %> " class= "agregarProd1">EDITAR</a>
                 <form action="/delete/<%= vistaAdmin[i].id %>/?_method=DELETE" method="POST">
-                    <button type="submit" value="borrar" >BORRAR</button>
+                    <button type="submit" value="borrar" class="borrarUpdate" >BORRAR</button>
                 </form>
             </div>
 
