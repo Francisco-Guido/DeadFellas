@@ -10,7 +10,7 @@
             </div>
     <%- include('./partials/head') %> 
 
-<body class = "classbodydetail">
+<body>
     <div class="btn-whatsapp">
         <a href="https://api.whatsapp.com/send?phone=5199999999" target="_blank">
         <img src="http://s2.accesoperu.com/logos/btn_whatsapp.png" width="40" alt="">
@@ -40,22 +40,9 @@
       <div class="row">
           <div class="col-2">
               <img src="../images/productos/<%=detail.images%>" width="100%" id="productImg">
-              
-              <!-- <div class="small-img-row">
-                  <div class="small-img-col">
-                      <img src="images/productos/detalleprod2.jpg" width="100%" class="small-img">
-                  </div>
-                  <div class="small-img-col">
-                    <img src="images/productos/detalleprod3.jpg" width="100%" class="small-img">
-                </div>
-                <div class="small-img-col">
-                    <img src="images/productos/detalleprod4.jpg" width="100%" class="small-img">
-                </div>
-              </div> -->
-
           </div>
-          <form action="/comprar/<%=detail.id %>" method="POST" enctype="multipart/form-data" class="formCreate1">
-          <div class="col-2 productInfo" >
+          <form action="/comprar/<%=detail.id %>" method="POST" enctype="multipart/form-data" class="col-2 productInfo">
+          <div>
               <p></p>
               <p></p>
               <h1><%=detail.name%></h1>
@@ -63,14 +50,7 @@
               <p class="unicocolor" title="Producto de edición limitada. Color único.">Color: Único</p>
 
               <div class="d-flex justify-content-center row align-items-center">
-              <select class="col-6 col-md-4">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-              </select>
-              <button>Agregar al carrito</button>
+              <button class="btncarrito">Agregar al carrito</button>
             </div>
               <h3>Descripción</h3>
               <br>
@@ -96,22 +76,22 @@
 
     <div class="row">
         <div class="col-2">
-            <img src="images/productos/gorra.jpg">
-            <h4>REMERA MATRIX DARK ACID</h4>
+            <img src="../../images/productos/gorra.jpg">
+            <h4>REMERA MATRIX</h4>
             <p>$2.590</p>
         </div>
         <div class="col-2">
-            <img src="images/productos/jacket.jpg">
-            <h4>REMERA CRYPTOCHILD </h4>
+            <img src="../../images/productos/jacket.jpg">
+            <h4>REMERA CRYPTO </h4>
             <p>$2.590</p>
         </div>
         <div class="col-2">
-            <img src="images/productos/SWET.jpg">
+            <img src="../../images/productos/SWET.jpg">
             <h4>REMERA SPITFIRE </h4>
             <p>$2.590</p>
         </div>
         <div class="col-2">
-            <img src="images/productos/remera 2.jpg">
+            <img src="../../images/productos/remera 2.jpg">
             <h4>REMERA SICK</h4>
             <p>$2.590</p>
         </div>
@@ -143,3 +123,5 @@
 
 </body>
 </html>
+
+
