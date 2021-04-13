@@ -24,7 +24,12 @@
             <a title="Dead Fellas" href="./"><img src="/images/logo/lodoDef.jpg" alt="Dead Fellas" width="200"/></a>
     </div>
    <nav>
-    <% if(usuarioLogueado.id == 16){ %>
+    <%if(typeof usuarioLogueado == "undefined"){ %>
+    <ul id="MenuItems">
+        <li><a href="" class = "carrito">BUSCAR</a></li>
+        <li><a href="./modificarUsuario" class = "carrito">MI CUENTA</a></li>
+    </ul>
+    <%} else if(usuarioLogueado.id == 16){ %>
         <ul id="MenuItems">
             <li><a href="" class = "carrito">BUSCAR</a></li>
             <li><a href="./modificarUsuario" class = "carrito">MI CUENTA</a></li>
