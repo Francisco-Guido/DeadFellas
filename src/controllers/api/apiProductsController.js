@@ -3,7 +3,7 @@ const db = require('../../database/models')
 module.exports = {
     allProducts: function(req,res){
         db.Product.findAll({
-            attributes: ['id','name', 'price', 'quantity', 'description']
+            attributes: ['id','name', 'price', 'quantity', 'description', 'collection_id']
         })
          .then (function(productos){
                  let respuesta = {
