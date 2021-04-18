@@ -29,18 +29,20 @@ module.exports = {
      })
 })},
 
- delete: function (req, res) {
-    db.Product.destroy ({
+ delete: async function (req, res) {
+
+    let product1 = await db.UserProduct.destroy ({
+        where: {
+            id_product: req.params.id
+        }
+    })
+    let product = await db.Product.destroy ({
         where: {
             id: req.params.id
         }
     })
-    .then(function(data){
-        res.redirect('/updateProduct')
-    })
-    .catch(function(e){
-        res.send(e)
-    }) 
+    return res.redirect('/updateProduct')
+
 },
 modificar: function (req, res) {
     let errorsEdit = validationResult(req);

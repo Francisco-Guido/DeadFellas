@@ -9,5 +9,7 @@ router.get('/productsDetail', upload5.any(), productsDetailController.detail);
 
 router.post('/comprar/:id', upload5.any(), middlewareLogueado, productsDetailController.comprar);
 
+router.get('/deleteCart/:id', productsDetailController.delete);
+
 
 module.exports = router;

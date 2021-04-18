@@ -21,7 +21,7 @@
     <div class="container">
        <div class="navbar">
           <div class="logo">
-            <a title="Dead Fellas" href="https://www.youtube.com/watch?v=MHoIoYou7ZU"><img src="/images/logo/lodoDef.jpg" alt="Dead Fellas" width="200"/></a>
+            <a title="Dead Fellas" href="/"><img src="/images/logo/lodoDef.jpg" alt="Dead Fellas" width="200"/></a>
     </div>
    <nav>
         <ul id="MenuItems">
@@ -58,7 +58,7 @@
                             <img src="../images/productos/<%=productos[j].images%>" width="10%">
                             <div>
                                 <p><%=productos[j].name%></p>
-                                <a href="">Remover</a>
+                                <a href="/deleteCart/<%=productos[j].id%>">Remover</a>
                             </div>
                           </div> 
     
@@ -77,7 +77,7 @@
                 <tr class="total-price">
                     <td></td>
                     <td>Total</td>
-                    <td>$15.420</td>   
+                    <td>$<%=precio%></td>   
                 </tr>
 
             </tbody>
