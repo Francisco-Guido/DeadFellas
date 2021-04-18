@@ -54,6 +54,16 @@ module.exports = function(sequelize, dataTypes){
         as: "collections",
         foreignKey: "collection_id",
      });
+
+        Product.belongsToMany(modelos.User, {
+            as: 'Product',
+            through: 'users_products',
+            foreignKey: 'id_product',
+            otherKey: 'id_user',
+            timestamps: false
+          });
+          
+    
      } 
     return Product
 }

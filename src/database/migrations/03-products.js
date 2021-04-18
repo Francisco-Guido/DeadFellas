@@ -30,7 +30,13 @@ module.exports = {
       updated_at: {
         type: Sequelize.DataTypes.DATE,
         alowNull: true,
-    }
+    },
+      collection_id: {
+        type: Sequelize.DataTypes.INTEGER(10).UNSIGNED,
+        references: {
+          model: "collections"
+        }
+      }
     })
   },
 

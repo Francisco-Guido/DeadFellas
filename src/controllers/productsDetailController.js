@@ -7,14 +7,20 @@ module.exports = {
              res.render('productsDetail', {vistaProductos:vistaProductos}) 
          })
     },
-
-    comprar: function (req, res) {
-        db.Product.findByPk (req.params.id)
-        .then (function(producto){
-            res.render('productsCart', {producto:producto})
+    comprar: async function (req, res) {
+        let productoAgregado = await db.UserProduct.create ({
+            id_user: req.session.usuarioLogueado.id,
+            id_product: req.params.id
         })
-        .catch(function(e) {
-            res.send (e)
+        let usuario = await db.User.findAll({
+            where: {
+                id: req.session.usuarioLogueado.id
+            },
+            include:[{
+                association: 'UserProduct'
+            }]
         })
+        let productos = usuario[0].UserProduct
+        return res.render('productsCart', {productos});
     }
 }

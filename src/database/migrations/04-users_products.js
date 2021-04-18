@@ -2,32 +2,28 @@
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    return queryInterface.createTable('product_sizes', {
+    return queryInterface.createTable('users_products', {
       id:{
         type: Sequelize.DataTypes.INTEGER(10).UNSIGNED,
         primaryKey: true,
         autoIncrement: true,
         allowNull:false
       },
-      size_id:{
+      id_user:{
         type: Sequelize.DataTypes.INTEGER(10).UNSIGNED,
-        alowNull: false,
         references: {
-          model: 'sizes',
-          key: 'id'
+          model: 'users'
         }
-    },
-    product_id: {
+      },
+      id_product: {
         type: Sequelize.DataTypes.INTEGER(10).UNSIGNED,
-        alowNull: false,
         references: {
-          model: 'products',
-          key: 'id'
-        }
+        model: 'products'
       }
+    }
 })
 },
   down: async (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('product_sizes')
+    return queryInterface.dropTable('users_products')
   }
 };

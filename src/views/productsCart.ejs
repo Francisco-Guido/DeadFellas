@@ -36,6 +36,7 @@
     
     <div class="small-container cart-page">
        <a href="/products"> <img src="../images/logo/arrow.png" width="20"></a>
+
         <table>
             <thead>
                 <tr>
@@ -49,20 +50,21 @@
 
             
             <tbody>
+                <%for(let j=0; j < productos.length; j++){%>
                 <tr>
                     <td>
                         <div class="cart-info">
-                            <img src="../images/productos/<%=producto.images%>" width="10%">
+                            <img src="../images/productos/<%=productos[j].images%>" width="10%">
                             <div>
-                                <p><%=producto.name%></p>
+                                <p><%=productos[j].name%></p>
                                 <a href="">Remover</a>
                             </div>
                           </div> 
     
                     </td>
-    
-                    <td>$<%=producto.price%></td>
-                </tr>   
+                    <td>$<%=productos[j].price%></td>
+                </tr>  
+                <%}%> 
         
 
                 <tr class="total-price-1">
