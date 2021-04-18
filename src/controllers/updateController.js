@@ -48,6 +48,8 @@ modificar: function (req, res) {
     db.Product.update ({
         name: req.body.name,
         price: req.body.price,
+        description: req.body.description,
+        quantity: req.body.quantity
     },{
         where: {
             id : req.params.id
