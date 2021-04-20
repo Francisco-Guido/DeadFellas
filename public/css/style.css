@@ -208,7 +208,6 @@ p {
 }
 
 .small-container1{
-    margin: auto;
     padding-left: 25px;
     padding-right: 25px;
 }
@@ -470,8 +469,15 @@ input:focus {
 
 
 
-.fb,
-.ig{
+.tabla {
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    margin-bottom: 145px;
+}
+
+.fb,.ig{
     width:20px;
 }
 
@@ -544,6 +550,8 @@ table {
     flex-wrap: wrap;
     text-align: left;
     margin-top: 50px;
+    margin-left: 50px;
+    width: 50%;
 }
 
 th {
@@ -603,7 +611,19 @@ td img {
     border-radius: 10px;
     padding: 1% 1% 1% 90%;
     font-family: Poppins;
-} 
+}
+
+.font45{
+    position: relative;
+    left: 100px
+}
+
+.imgCarrito{
+    width: 40%;
+    height: 90px;
+    position: relative;
+    bottom: 20px;
+}
 
 /*-------- LOGIN --------*/
 
@@ -994,6 +1014,7 @@ main{
     border-radius: 10px;
     padding: 4px;
     font-size: 14px;
+    margin-right: 40px;
 }
 
 .finish:hover{
@@ -1543,6 +1564,20 @@ width: 0.1px;
     height: 100vw;
 }
 
+
+.art1 {
+    width: 50%;
+    text-align: left;
+    padding-left: 70px;
+}
+
+.ACARRITO{
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+
 @media screen and (max-width:870px){
 
 .slider{
@@ -1558,13 +1593,11 @@ width: 0.1px;
     font-size: 15px
 }
 
-.di
-footer2{
+.divfooter2{
     padding-top:20px
-
-}
 }
 
 .hr1 {
     width: 100%;
+}
 }

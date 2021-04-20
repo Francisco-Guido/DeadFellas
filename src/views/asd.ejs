@@ -34,75 +34,62 @@
   </div> 
 
     
-    <!-- <div class="small-container cart-page">
-       <a href="/products"> <img src="../images/logo/arrow.png" width="20"></a>  
-    </div> -->
-<div class="tabla">
-<table>
-    
-    
-    <thead>
-        <tr>
-        <th class = "art1">Artículos</th>
-        <th class = "art2"></th>
-        <th class = "art3">Precio</th>
-        </tr>
-    </thead>
+    <div class="small-container cart-page">
+       <a href="/products"> <img src="../images/logo/arrow.png" width="20"></a>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Artículos</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
 
 
-    <tbody>
 
-        <%for(let j=0; j < productos.length; j++){%>
-            <tr>
-                <td>
-                    <div class="cart-info">
-                        <img src="../images/productos/<%=productos[j].images%>" class="imgCarrito">
-                        <div>
-                            <p class="font45"><%=productos[j].name%></p>
-                        </div>
-                    </div> 
 
-                </td>
-                <td><a href="/deleteCart/<%=productos[j].id%>" class="ACARRITO">Remover</a></td>
-                <td>$<%=productos[j].price%></td>
-            </tr>  
-            <%}%> 
-    
-
-            <tr class="total-price-1">
-                <td></td>
-                <td>Costo de envío</td>
-                <td>$500</td>   
-            </tr>
             
-            <tr class="total-price">
-                <td></td>
-                <td>Total</td>
-                <td>$<%=precio%></td>   
-            </tr>
+            <tbody>
+                <%for(let j=0; j < productos.length; j++){%>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="../images/productos/<%=productos[j].images%>" width="10%">
+                            <div>
+                                <p><%=productos[j].name%></p>
+                                <a href="/deleteCart/<%=productos[j].id%>">Remover</a>
+                            </div>
+                          </div> 
     
-    </tbody>
+                    </td>
+                    <td>$<%=productos[j].price%></td>
+                </tr>  
+                <%}%> 
+        
 
-</table>
+                <tr class="total-price-1">
+                    <td></td>
+                    <td>Costo de envío</td>
+                    <td>$500</td>   
+                </tr>
+                
+                <tr class="total-price">
+                    <td></td>
+                    <td>Total</td>
+                    <td>$<%=precio%></td>   
+                </tr>
+
+            </tbody>
+            
+        </table>
+        <br>
+        <a href="/" class="finish">Finalizar compra</a>
 
 
-    <br>
-    <a href="/" class="finish">Finalizar compra</a>
+         
+    </div>
 
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
+    </main>
 <!-------- FOOTER -------->
 
 <%- include('./partials/scripts') %> 
@@ -124,4 +111,4 @@
 </script>
 
 </body>
-</html>b{}
+</html>
