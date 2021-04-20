@@ -49,28 +49,13 @@
 <div class="small-container1">
     <h2 class="tittle">PRODUCTOS DESTACADOS</h2>
     <div class="row">
-        <div class="col-2">
-            <img src="images/productos/remera 1.jpg">
-            <h4>PUMP UP THE VALIUM T SHIRT</h4>
-            <p>$3.760</p>
-        </div>
-        <div class="col-2">
-            <img src="images/productos/remera 2.jpg">
-            <h4>POST OFFICE T SHIRT </h4>
-            <p>$2.880</p>
-        </div>
-        <div class="col-2">
-            <img src="images/productos/SWET.jpg">
-            <h4>SARTRE SWEATER </h4>
-            <p>$8.280</p>
-        </div>
-        <div class="col-2">
-            <img src="images/productos/gorra.jpg">
-            <h4>FESTIVAL DE CANNES CAP</h4>
-            <p>$2.680</p>
-        </div>
-    </div>
-  </div>
+            <% for (let i= 0; i <= 3; i++){ %>
+                <div class="col-2">
+                <a href="/Detalle/<%= vistaProductos[i].id %> "><img src="images/productos/<%=vistaProductos[i].images%>"></a>
+                <h2><%= vistaProductos[i].name %> </h2>
+                <p> <%= vistaProductos[i].price %> </p>
+                </div>
+                <% }  %>
 </div>
 
 <!-------- FOOTER -------->
