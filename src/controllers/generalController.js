@@ -1,10 +1,13 @@
+const db = require ('../database/models/');
+
 module.exports = {
-    home: function(req,res){
-    res.render('index');
-}}
-
-
-
+    index: function(req,res){
+        db.Product.findAll()
+         .then (function(vistaProductos){
+             res.render('index', {vistaProductos:vistaProductos}) 
+         })
+    }
+}
 
 
 

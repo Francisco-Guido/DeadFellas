@@ -6,6 +6,6 @@ const upload4= require('../middlewares/productMid')
 
 router.get('/products', upload4.any(), productsController.pushProducts);
 
-router.get('/Detalle/:id', upload4.any(), productsController.detalle);
+router.get('/Detalle/:id', upload4.any(), productsController.detalle, productsController.detalle);
 
 module.exports = router;
