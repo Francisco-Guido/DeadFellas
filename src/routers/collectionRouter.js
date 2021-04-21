@@ -3,7 +3,7 @@ const router = express.Router();
 const generalController = require('../controllers/collectionController');
 
 
-router.get('/colleccion2020', generalController.collection);
+router.get('/coleccion2020', generalController.collection);
 
 
 module.exports = router;

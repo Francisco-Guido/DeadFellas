@@ -19,5 +19,39 @@
         
         <%- include('./partials/header') %> 
 
+<div class="collections">
+    <img src="images/2020/1.jpg" width="100%" alt="">
+    <img src="images/2020/2.jpg" width="100%" alt="">
+    <img src="images/2020/3.jpg" width="100%" alt="">
+    <img src="images/2020/4.jpg" width="100%" alt="">
+    <img src="images/2020/5.jpg" width="100%" alt="">
+    <img src="images/2020/6.jpg" width="100%" alt="">
+    <img src="images/2020/7.jpg" width="100%" alt="">
+    <img src="images/2020/8.jpg" width="100%" alt="">
+    <img src="images/2020/9.jpg" width="100%" alt="">
+    <img src="images/2020/10.jpg" width="100%" alt="">
+</div>
+
+<!-------- FOOTER -------->
+
+<%- include('./partials/scripts') %> 
+
+<!-- js para menu toggle -->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle() {
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        } else {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+
+</script>
+
 </body>
 </html>
