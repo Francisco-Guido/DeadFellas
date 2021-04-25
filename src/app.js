@@ -7,7 +7,7 @@ const methodOverride = require('method-override');
 const {check, validationResult, body} = require('express-validator');
 const cors = require('cors')
 
-let port = process.env.PORT || 3000;
+let port = process.env.PORT || 3001;
 
 app.set ('view engine', 'ejs')
 app.set('views', path.join(__dirname, './views'));
