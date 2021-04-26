@@ -3,9 +3,10 @@ const router = express.Router();
 const productsCartController = require('../controllers/productsCartController');
 const multer = require('multer');
 const middlewareCarrito = require ('../middlewares/carrito');
-const upload5= require('../middlewares/productMid')
+const upload5= require('../middlewares/productMid');
 
-router.get('/productsCart', upload5.any(),  productsCartController.cart);
+
+router.get('/productsCart', middlewareCarrito, upload5.any(),  productsCartController.cart);
 
 
 

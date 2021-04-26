@@ -7,6 +7,7 @@ module.exports = {
              res.render('productsDetail', {vistaProductos:vistaProductos}) 
          })
     },
+    // crea registro
     comprar: async function (req, res) {
         let productoAgregado = await db.UserProduct.create ({
             id_user: req.session.usuarioLogueado.id,
@@ -16,6 +17,7 @@ module.exports = {
             where: {
                 id: req.session.usuarioLogueado.id
             },
+            // trae usuario relacionado
             include:[{
                 association: 'UserProduct'
             }]
@@ -28,6 +30,7 @@ module.exports = {
         for(let i = 0 ; i < productos.length ; i++){
             total.push(Number(productos[i].price))
         }
+        // metodo para sumar precios del array
         let precio = total.reduce(reducer)
         return res.render('productsCart', {productos, precio});
     },

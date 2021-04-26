@@ -17,7 +17,7 @@ app.use(cors())
 app.use(session({secret: "Adloremipsum"}));
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
-app.use(middlewareEsUsuario);
+// app.use(middlewareEsUsuario);
 app.use(methodOverride('_method'));
 
 

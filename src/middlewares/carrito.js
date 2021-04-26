@@ -1,8 +1,9 @@
-module.exports = function(req, res, next) {
-    if(req.session.usuarioLogueado == true){
-        next();
+    function carrito(req, res, next) {
+        if(req.session.usuarioLogueado == undefined) {
+            res.redirect('/login')
+        } else {
+            next()
+        }
     }
-    res.send(req.session.usuarioLogueado);
-     
-    }
-
+    
+    module.exports = carrito;
