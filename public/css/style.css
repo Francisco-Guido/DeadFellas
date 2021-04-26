@@ -1545,12 +1545,13 @@ width: 0.1px;
     height: 100px;
     position: relative;
     bottom: 20px;
+    right: 12px;
 }
 
 .font45 {
     position: relative;
     left: 3px;
-    bottom: 35px;
+    bottom: 2px;
 }
 
 .ACARRITO {
@@ -1558,7 +1559,7 @@ width: 0.1px;
     font-size: 10px;
     position: relative;
     right: 91px;
-    bottom: -50px;
+    top: 32px
 }
 
 .finish {
