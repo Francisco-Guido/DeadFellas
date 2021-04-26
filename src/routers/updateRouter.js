@@ -6,8 +6,9 @@ const upload3= require('../middlewares/productMid')
 const productValidation = require('../validations/productsValidation');
 const bcrypt=require("bcryptjs");
 const path=require("path");
+const middleware = require('../middlewares/esUsuario');
 
-router.get('/updateProduct', upload3.any(), updateController.update);
+router.get('/updateProduct', middleware, upload3.any(), updateController.update);
 
 router.delete('/delete/:id', updateController.delete);
 
