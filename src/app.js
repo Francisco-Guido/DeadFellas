@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-const middlewareEsUsuario = require('./middlewares/esUsuario');
+const middlewareAccess = require('./middlewares/hasAccess');
 var session = require('express-session');
 const methodOverride = require('method-override');
 const {check, validationResult, body} = require('express-validator');
@@ -17,7 +17,7 @@ app.use(cors())
 app.use(session({secret: "Adloremipsum"}));
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
-app.use(middlewareEsUsuario);
+app.use(middlewareAccess);
 app.use(methodOverride('_method'));
 
 

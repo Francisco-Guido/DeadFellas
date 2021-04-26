@@ -23,12 +23,24 @@
           <div class="logo">
             <a title="Dead Fellas" href="/"><img src="/images/logo/lodoDef.jpg" alt="Dead Fellas" width="200"/></a>
     </div>
-   <nav>
+    <nav>
+        <%if(typeof usuarioLogueado == "undefined"){ %>
         <ul id="MenuItems">
-            <li><a href="" class = "carrito">MI CUENTA</a></li>
-            <li><a href="./productsCart" class = "carrito"><i class="fa fa-shopping-cart" aria-hidden="true"></i> </a></li>
+            <li><a href="/login" class = "carrito">INICIAR SESIÓN</a></li>
+            <li><a href="./coleccion2020" class = "carrito">COLECCIONES</a></li>
         </ul>
-    </nav>
+        <%} else if(usuarioLogueado.id == 16){ %>
+            <ul id="MenuItems">
+                <li><a href="/modificarUsuario" class = "carrito">MI CUENTA</a></li>
+            </ul>
+        <% } else { %>
+            <ul id="MenuItems">
+                <li><a href="/modificarUsuario" class = "carrito">MI CUENTA</a></li>
+                <li><a href="./coleccion2020" class = "carrito">COLECCIONES</a></li>
+                <li><a href="/productsCart" class = "carrito"><i class="fa fa-shopping-cart" aria-hidden="true"></i> </a></li>
+            </ul>
+        <% } %>
+        </nav>
     <img src="/images/logo/menu.png" class="menu-icon" onclick="menutoggle()">
    </div>
   </div> 

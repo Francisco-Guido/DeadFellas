@@ -4,10 +4,11 @@ const productsDetailController = require('../controllers/productsDetailControlle
 const multer = require('multer');
 const upload5= require('../middlewares/productMid')
 const middlewareLogueado = require('../middlewares/logueado');
+const middlewareCarrito = require('../middlewares/carrito');
 
 router.get('/productsDetail', upload5.any(), productsDetailController.detail);
 
-router.post('/comprar/:id', upload5.any(), middlewareLogueado, productsDetailController.comprar);
+router.post('/comprar/:id', upload5.any(),middlewareCarrito , middlewareLogueado, productsDetailController.comprar);
 
 router.get('/deleteCart/:id', productsDetailController.delete);
 

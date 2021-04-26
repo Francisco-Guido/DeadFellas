@@ -49,7 +49,10 @@
 <div class="small-container1">
     <h2 class="tittle">PRODUCTOS DESTACADOS</h2>
     <div class="row">
-            <% for (let i= 0; i <= 3; i++){ %>
+
+        <!-- cambiar valor de i -->
+            <% for (let i= 0; i <= 1; i++){ %>
+
                 <div class="col-2">
                 <a href="/Detalle/<%= vistaProductos[i].id %> "><img src="images/productos/<%=vistaProductos[i].images%>"></a>
                 <h2><%= vistaProductos[i].name %> </h2>
